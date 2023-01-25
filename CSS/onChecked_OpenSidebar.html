@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Checked Open Sidebar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }   
+
+        .box {
+            height: 100%;
+            background-color: rgb(192, 45, 8);
+            width: 250px;
+        }
+
+
+        .box {
+            transform: translateX(-250px);
+            overflow: hidden;
+            transition: 2s ease-in-out;
+
+        }
+
+        .boxToggle:checked + .box {
+            transform: translateX(-1px);
+        }
+
+        button{
+            padding:10px;
+            background-color: blueviolet;
+            border:none;
+            border-radius:5px;
+            font-size:24px;
+        }
+    </style>
+</head>
+
+<body>
+        <input type="checkbox" class="boxToggle">
+        <div class="box"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dignissimos suscipit nemo? Veniam nemo dolores ipsa, fuga rerum repellat numquam nam. Optio est voluptatem quia officiis in et numquam recusandae modi. Rem enim, dolor modi quasi nemo sed eius iste corrupti? Sed consectetur quis placeat officia sit fugit quibusdam molestias voluptatibus voluptas fugiat, temporibus soluta dicta optio corporis. Ducimus incidunt eum necessitatibus magni sit totam dolor consequuntur vitae. Nostrum tempora optio officiis consequuntur architecto eaque perspiciatis ratione nemo laborum molestias magni placeat temporibus repellendus est vero quasi iste odio, doloremque ducimus sequi, ut accusantium eius. Ullam veritatis sunt similique magni. </p>
+    </div>
+
+   
+</body>
+
+</html>

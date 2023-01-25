@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    
+    }
+    .sidebar{
+        width: 230px;
+        background-color: blue;
+        transform: translateX(0);
+        transition: .5s ease-in-out;
+        /* display: block; */
+    }
+    .d-flex{
+        display: flex;
+    }
+    .flex-grow-1{
+        flex-grow: 1;
+    }
+    .h-100{
+        height: 100%;
+    }
+    .d-none{
+        display: none;
+    }
+    #sidebarToggle:checked + .sidebar{
+        transform: translateX(-230px);
+        width: 0;
+        
+    }
+    #sidebarToggle:checked + section{
+        flex-grow: 1;
+    }
+    </style>
+</head>
+<body>
+    <section class="d-flex h-100">
+        <input type="checkbox" id="sidebarToggle" class="d-none">
+        <aside class="sidebar">
+        
+        </aside>
+        <section class="flex-grow-1">
+            <label for="sidebarToggle">abc</label>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea blanditiis eos possimus cupiditate corporis
+            maiores, dolorem ipsum sapiente quam dolor delectus explicabo voluptas corrupti dicta? Nam temporibus nihil
+            maxime perferendis?
+        </section>
+        </section>
+</body>
+</html>

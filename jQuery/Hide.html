@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<style>
+    .container {
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 50px solid black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugiat. Est ducimus, distinctio rerum
+            sunt sint dolores illo earum error molestias, animi qui deserunt ab? Aut consequatur labore officia quis
+            unde ut consectetur hic reprehenderit dolore magnam suscipit modi ab alias ratione aspernatur fugit
+            obcaecati sed commodi, tempore atque dolores?
+        </div>
+        <div class="hidediv">
+            orem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolor architecto at qui officiis earum autem
+            libero sint saepe numquam, explicabo ipsum laudantium, fuga temporibus rerum pariatur veritatis reiciendis
+            quisquam in impedit consectetur. Ducimus amet eaque voluptas ipsam ipsa illum non quam soluta culpa
+            perspiciatis dolore praesentium, modi odio sequi.rajchmapneria
+        </div>
+
+        <button class="buttonHide ">
+            Show More
+        </button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".buttonHide").click(function () {
+                $(".hidediv").fadeToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>

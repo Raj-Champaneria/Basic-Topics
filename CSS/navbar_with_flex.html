@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin-top:20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        body {
+            background-color: #e0e0e0;
+        }
+
+        .img-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+
+        .tripple {
+            color: #C3CAD9;
+        }
+
+        .left-div {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-div {
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logoname {
+            color: #4D5E80;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 25px;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        li {
+            list-style:none;
+            color: #7D8FB3;
+            font-weight: 700;
+        }
+
+        .right-div {
+            margin-right: 40px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        h4{
+            color: #6B7A99;
+            font-weight: 700;
+        }
+
+
+        .bell{
+            position:relative;
+        }
+      
+       .bell::after{
+        content: "";
+        height:12px;
+        width:12px;
+        background-color: red;
+        position: absolute;
+        top:0%;
+        right:-5%;
+        border-radius: 50%;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-div">
+            <div class="img-div">
+                <img class="tripple" src="images/Icon1.png">
+            </div>
+            <div class="content-div">
+                <h3 class="logoname">Constructor</h3>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>About Us</li>
+                    <li>News</li>
+                    <li>User Policy</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-div">
+            <img class="tripple" src="images/Icon9.png">
+            <h4>clayton santos</h4>
+            <div class="img-div bell">
+                <img class="tripple" src="images/Icon10.png">
+            </div>
+            <div class="img-div">
+                <img class="tripple" src="images/Icon11.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
