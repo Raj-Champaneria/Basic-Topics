@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Write a JavaScript function to retrieve all the values of an object's
+    properties. 2. Write a JavaScript function to convert an object into a list
+    of `[key, value]` pairs. 3. Write a JavaScript function to get a copy of the
+    object where the keys have become the values and the values the keys. 4.
+    Write a JavaScript program to find the most frequent item of an array. 5.
+    Write a JavaScript program to remove duplicate items from an array (ignore
+    case sensitivity). 6. Write a JavaScript function to merge two arrays and
+    removes all duplicates elements. 7. Write a JavaScript function to remove a
+    specific element from an array. 8. Write a JavaScript function to get a
+    random item from an array.[1,2,3,4,5,6,7,8,9,10] 9. Write a JavaScript
+    function to filter false, null, 0 and blank values from an array.[58, '',
+    'abcd', true, null, false, 0] -->
+
+    <script>
+      // ypour code
+      let obj1 = {
+        name: "raj",
+        surname: "patel",
+      };
+      let obj2 = {
+        name: "Jayesh",
+        surname: "Champaneria",
+      };
+
+      //1 function to retrieve all the values of object's Properties
+      function findObjValue(funcname) {
+        return Object.values(funcname);
+      }
+      const data = findObjValue(obj2);
+      const data1 = findObjValue(obj1);
+      console.log(data);
+      console.log(data1);
+
+      //with for in loop
+      for (let c in obj1) {
+        console.log(obj1[c]);
+      }
+
+      //2 Write a JavaScript function to convert an object into a list of `[key, value]
+      function findObjProperties(funcname) {
+        return Object.entries(funcname);
+      }
+      const data3 = findObjProperties(obj1);
+      console.log(data3);
+
+      //3.Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
+      function swap(obj) {
+        var newobj = {};
+        for (var k in obj) {
+          newobj[obj[k]] = k;
+        }
+        return newobj;
+      }
+      console.log(obj1);
+      console.log(swap(obj1));
+
+      // 4] Write a JavaScript program to find the most frequent item of an array.
+
+      //5] Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+      function removeDuplicate(w) {
+        let p = [...new Set(w)];
+        return p;
+      }
+      arr10 = [1, 2, 3, 4, 5, 6, 7, 4, 2, 1, 5, 10];
+      console.log(removeDuplicate(arr10));
+
+      //6] Write a JavaScript function to merge two arrays and removes all duplicates elements.
+      function mergeDuplicate(v, b) {
+        let concat = v.concat(b);
+        console.log(concat);
+        let e = [...new Set(concat)];
+        e.sort((a, b) => a - b);
+        return e;
+      }
+      let num1 = [1, 2, 2, 3, 10];
+      let num2 = [4, 5, 6, 3, 11];
+      console.log(mergeDuplicate(num1, num2));
+
+      //7]Write a JavaScript function to remove a specific element from an array.
+      function removespecific(arr,val)
+      {
+        let n=[];
+        for(i=0;i<arr.length;i++)
+        {
+          if(arr[i]!== val)
+          {
+            n.push(arr[i]);
+          }
+        }
+        return n;
+      }
+      let out=removespecific([1,2,3,4],3);
+      console.log(out + "raaajjjjjj");
+
+      //8] Write a JavaScript function to get a random item from an array.[1,2,3,4,5,6,7,8,9,10]
+      function randomNumber(items) {
+        return items[Math.floor(Math.random() * items.length)];
+      }
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      console.log(randomNumber(arr));
+      //9]Write a JavaScript function to filter false, null, 0 and blank values from an array.[58, '', 'abcd', true, null, false, 0]
+      function filt(items) {
+        return items.filter((val) => {
+          if (val !== false || val !== 0 || val !== "" || val !== null) {
+            return val;
+          }
+        });
+      }
+
+      let arr1 = [58, "", " abcd", true, null, false, 0];
+      console.log(filt(arr1));
+
+      //gracy
+      // Task 1
+      let arr4 = [7, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 4, 5, 6];
+      var ans = arr4.reduce(
+        (count, item) => ((count[item] = count[item] + 1 || 1), count),
+        {}
+      );
+      console.log(ans);
+
+      let f = 0,
+        k = 0;
+      for (const [key, value] of Object.entries(ans)) {
+        if (value > f) {
+          f = value;
+          k = key;
+        }
+      }
+      console.log("Element that is most frequent is : " + k);
+
+      //  Task 4
+      let arr6 = [4, 5, 6, 7, 8, 6, 5, 7, 7, 7, 7];
+      var uni = [];
+      arr6.forEach((element) => {
+        if (uni.includes(element) === false) {
+          uni.push(element);
+        }
+      });
+
+      console.log("The Unique elements are : ");
+      console.log(uni);
+
+      // tASK 6 mege two arrays and remove duplicate values
+
+      let arr7 = [1, 2, 3, 3, 3, 3, 4, 5];
+      let arr8 = [6, 7, 7, 7, 7, 7, 8, 9, 10];
+
+      arr7 = arr7.concat(arr8);
+      console.log(arr7);
+
+      arr8 = [];
+      arr7.forEach((ele) => {
+        if (arr8.includes(ele) === false) {
+          arr8.push(ele);
+        }
+      });
+      console.log("Concated list with duplicates removed are : ");
+      console.log(arr8);
+
+      // TASK 4
+
+      let arr9 = [1, 2, 3, 4, 5, 6, 7, 8];
+      function task4(arr, ele) {
+        let ar = [];
+        arr.filter((val) => {
+          if (val != ele) {
+            ar.push(val);
+          }
+        });
+        return ar;
+      }
+      console.log("The new arry(with deletedn item) : ");
+
+      let answer = task4(arr9, 6);
+      console.log(answer);
+
+
+      
+    </script>
+  </body>
+</html>

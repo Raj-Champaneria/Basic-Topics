@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json parse method</title>
+</head>
+
+<body>
+    <script>
+        //String to javascript object
+        let obj_parse =
+            '{"name":"John", "age":30}'
+
+            let b=typeof(obj_parse);
+            console.log(b);
+
+        let parsed_obj=JSON.parse(obj_parse);
+        console.log(parsed_obj);
+        console.log(typeof parsed_obj);
+
+        //javascript object to string
+
+        let obj_string ={
+            name:"raj",
+            surname:"champaneria"
+        }
+
+        let stringify_obj=JSON.stringify(obj_string);
+        console.log(stringify_obj);
+    </script>
+
+</body>
+
+</html>

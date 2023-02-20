@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a program to compare two objects
+
+        let boy1={name:"kalpesh",color:"black"};
+        let boy2={name:"kalpesh",color:"black"};
+        console.log(boy1===boy2);//Output is false
+        
+        //Whenever we want compare two objects,First we have to convert that object into string,After converting the object into string we are ready to compare that object.
+        
+        let stringifyBoy1=JSON.stringify(boy1);
+        let stringifyBoy2=JSON.stringify(boy2);
+
+        console.log(stringifyBoy1==stringifyBoy2);//Output is True
+    </script>
+</body>
+</html>

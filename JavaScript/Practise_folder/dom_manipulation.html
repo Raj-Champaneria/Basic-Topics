@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn-add">CLICK HERE</button>
+
+    <h1 class="heading1">hiii</h1>
+    <span id="span"></span><br>
+
+    <button class="add-button">+</button>
+    <span id="span2">counter-value:</span>
+    <button class="remove-button">-</button>
+    <script>
+        const btn = document.querySelector(".btn-add");
+        const plusbutton = document.querySelector(".add-button");
+        const minusbutton = document.querySelector(".remove-button");
+
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        console.log(btn);
+        let count = 0;
+        btn.onclick = () => {
+            const rndcol = `rgb(${random(255)},${random(255)},${random(255)})`;
+            console.log(rndcol);
+            document.body.style.backgroundColor = rndcol;
+            console.log(count);
+            count = count + 1;
+            document.getElementById("span").innerText = (`Total clicks ${count}`);
+            return count;
+        }
+
+        let counter = 0;
+
+        plusbutton.onmousemove = function () {
+            counter = counter + 1;
+            document.getElementById("span2").innerHTML = (`${counter}`);
+            return counter;
+        }
+
+        minusbutton.onclick = () => {
+            counter = counter - 1;
+            document.getElementById("span2").innerHTML = (`${counter}`);
+
+            return counter;
+        }
+
+    //    function btnOnClick(){
+    //         document.body.style.backgroundColor="red";
+    //         console.log("bb");
+    //     }
+
+
+        //Check which key is pressed? 
+        window.addEventListener("keydown",checkkey);
+
+        function checkkey(e)
+        {
+            console.log(e.key);                    
+        }
+
+    </script>
+</body>
+
+</html>

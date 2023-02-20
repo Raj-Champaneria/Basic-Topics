@@ -1,0 +1,12 @@
+Javascript Number Methods
+
+
+=>Number.isFinite()
+=>Number.isInteger()
+=>Number.isNan()
+=>Number.parseFloat()
+=>Number.parseInt()
+
+
+Basically in js if there is IS before the any numbering Methods it always returns True or False
+

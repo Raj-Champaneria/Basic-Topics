@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aside-wrapper {
+            display: block;
+        }
+
+        .aside-wrapper {
+            transform: translateX(0);
+            transition: 0.5s ease-in-out;
+        }
+
+        #sidebarToggle:checked+.aside-wrapper {
+            transform: translateX(-300px);
+            width: 0px;
+            padding: 0;
+        }
+
+        .aside-wrapper {
+            padding: 35px;
+            background-color: var(--white);
+            height: 100%;
+        }
+
+        .ul-container a {
+            color: var(--gray-600);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ul-container li {
+            display: flex;
+            align-items: center;
+        }
+
+        .ul-container li a {
+            color: var(--gray-500);
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .ul-container li a:hover {
+            color: rgb(34, 30, 30);
+            text-shadow: 2px #110c0c;
+            background-color: #f0f1f5;
+            border-radius: 5px;
+        }
+
+        .ul-container li a:active {
+            color: var(--primary-500);
+        }
+
+        .ul-container li a:focus {
+            color: var(--primary-500);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="sidebarToggle" class="d-none">
+    <aside class="aside-wrapper">
+        <div class="logo d-flex aic">
+            <img class="logo-img" src="assests/images/Polygon 5.png">
+            <img class="vector-38" src="assests/images/Vector 38.png">
+            <img class="vector-39" src="assests/images/Vector 39.png">
+            <h1 class="logo-name">KANBAN</h1>
+        </div>
+        <div class="aside-nav-container d-flex flex-column ja h-100">
+            <ul class="ul-container">
+                <li class="list-items"><img class="li-img" src="assests/images/Dahboard.png"><a href="#">Dashboard</a>
+                </li>
+                <li class="list-items "><img class="li-img " src="assests/images/Inventory.png"><a
+                        href="#">Inventory</a></li>
+                <li class="list-items"><img class="li-img" src="assests/images/Reports.png"><a href="#">Reports</a>
+                </li>
+                <li class="list-items"><img class="li-img" src="assests/images/Suppliers.png"><a href="#">Suppliers</a>
+                </li>
+                <li class="list-items"><img class="li-img" src="assests/images/Orders.png"><a href="#">Orders</a>
+                </li>
+                <li class="list-items"><img class="li-img" src="assests/images/Manage_store.png"><a href="#">Manage
+                        Store</a></li>
+            </ul>
+            <ul class="ul-container">
+                <li class="list-items"><img class="li-img" src="assests/images/setting.png"><a href="#">Setting</a>
+                </li>
+                <li class="list-items"><img class="li-img" src="assests/images/logout.png"><a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+    </aside>
+</body>
+
+</html>

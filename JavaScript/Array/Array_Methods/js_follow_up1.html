@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+        let num = [1, 2, 3, 4, 5, 7, 8, 9, 6,35,37,38];
+
+         let evenarray = num.filter((item) => item % 2 == 0);
+
+        //  let newarray=evenarray.map((item,index)=>{
+        //      return `id:${item}${index}`
+        //  });
+        
+        
+        let newarray = evenarray.map((item) => {
+            return { id: item }
+        });
+        
+        console.log(newarray);
+    //   let newarray = evenarray.map((item) => ({id:item}));
+
+
+
+        let sort = num.sort((a,b)=>a-b);
+        console.log(sort)
+        
+    </script>
+</body>
+</html>

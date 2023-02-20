@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Write a JavaScript function to retrieve all the values of an object's properties.
+
+        let obj = {
+            name: "Raj",
+            sport: "cricket",
+        };
+        function objName(objname) {
+            return Object.values(objname);
+        }
+        console.log(objName(obj));
+
+        // 2. Write a JavaScript function to convert an object into a list of `[key, value]` pairs.
+
+        function objName1(objname) {
+            return Object.entries(objname);
+        }
+        console.log(objName1(obj));
+
+        // 3. Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
+
+        function swap(o) {
+            let newobj = {};
+            for (let r in obj) {
+                newobj[obj[r]] = r;
+            }
+            return newobj;
+        }
+        console.log(swap(obj));
+
+        //5 Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+
+        function removeDuplicate(arr) {
+            let newarray = [...new Set(arr)];
+            return newarray.sort((a, b) => a - b);
+        }
+        console.log(
+            removeDuplicate([
+                1,
+                2,
+                1,
+                2,
+                45,
+                552,
+                11,
+                2,
+                4,
+                1,
+                2,
+                552,
+                "a",
+                "A",
+                "b",
+                "c",
+                "d",
+            ])
+        );
+
+        // 6 Write a JavaScript function to merge two arrays and removes all duplicates elements
+
+        // function mergeDuplicate(arr1, arr2) {
+
+        // }
+        // console.log(mergeDuplicate([1, 2, 3], [4, 5, 6, 3]));
+
+        //7 Write a JavaScript function to remove a specific element from an array.
+
+        function specificRemove(arr, ele) {
+            let ar = [];
+            arr.filter((val) => {
+                if (val != ele) {
+                    ar.push(val);
+                }
+            });
+            return ar;
+        }
+        let arr9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        console.log(specificRemove(arr9, 8));
+
+        // 8. Write a JavaScript function to get a random item from an array.[1,2,3,4,5,6,7,8,9,10]
+
+        let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        function random(val) {
+            return val[Math.floor(Math.random() * a.length)];
+        }
+        console.log(random(a));
+
+        //9. Write a JavaScript function to filter false, null, 0 and blank values from an array.[58, '', 'abcd', true, null, false, 0]
+
+        function checkFilter(arr) {
+            let fg = [];
+            let v = arr.filter((val) => {
+                if (val !== false && val !== "abcd") {
+                    fg.push(val);
+                }
+            });
+            return fg;
+        }
+
+        console.log(checkFilter([58, "", "abcd", true, null, false, 0]));
+    </script>
+</body>
+
+</html>

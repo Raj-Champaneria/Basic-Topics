@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Write a simple JavaScript program to join all elements of the following array into a string. Go to the editor
+        // Sample array : myColor = ["Red", "Green", "White", "Black"];
+
+        //Array method:join()
+        let myColor = ["Red", "Green", "White", "Black"];
+
+        let join = myColor.join('+');
+        console.log(join);
+
+        //Array method
+
+        // 1]push=>With the use of push method the number which we want to add ,that number is add on to the last index.
+        let num1 = [1, 2, 4, 5, 6, 8, 5, 8, 8];
+        num1.push(0);
+        console.log(num1);
+        //o/p=>[1, 2, 4, 5, 6, 8, 5, 8, 8, 0]
+        // if we push more that one argument in push so the numbers are adding sequncely.
+        num1.push(1, 2, 3, 4);
+        console.log(num1);
+
+        //2]Array Unshift:Unshift method is used for add a number to their starting index.
+        let num3 = [1, 2, 3, 4, 5, 6, 4, 5, 6, 4]
+        num3.unshift(11)
+        console.log(num3);
+        // o/p=>[11, 1, 2, 3, 4, 5, 6, 4, 5, 6, 4]
+        // if we add more that one argument in unshift so the numbers are adding sequncely.
+        num3.unshift(1, 2, 3, 4);
+        console.log(num3);
+        // o/p=>[1, 2, 3, 4, 11, 1, 2, 3, 4, 5, 6, 4, 5, 6, 4]
+
+        // 3]pop:Delete an Element to that last index
+        let num4 = [1, 2, 3, 4, 5, 6, 4, 5, 60]
+        num4.pop(0);
+        console.log(num4);
+        // O/P=> [1, 2, 3, 4, 5, 6, 4, 5]
+
+        // 4]Concat:This method is used for merging two arrays.
+        num5 = [1, 2, 3, 4, 5, 6]
+        num6 = [11, 12, 13]
+        console.log(num5.concat(num6));
+        // o/p=>[1, 2, 3, 4, 5, 6, 11, 12, 13]
+
+        // 5]sort():This Method is used for sorting of an Array
+        // num7 = [4, 5, 6, 4, 2, 2, 2, 5,41, 34, 44]
+        // console.log(num7.sort((a,b)=>{
+        //     return a-b;
+        // },"hii"))
+        // o/p=> [2,2,2,34,4,4,41,44,5,5,6]
+        //Sort method is sorting the array's Value only ,It is not correct Way to sort the numbers array.
+
+        // 6]indexof:this method is used for finding the index .
+        let num8 = [1, 2, 6, 4, 5, 6]
+        console.log(num8.indexOf(6))
+        // o/p=>2
+
+        // 7]length:finding the length of array
+
+        let num9 = [1, 2, 3, 4, 5, 60]
+        console.log(num9.length)
+
+        // 8]slice method :
+        // slice()
+        // slice(start)
+        // slice(start,end)
+        // It accepts two values first is starting value and another is ending .
+        // slice method is used for example
+        //  u have one pizza and u want only perticular part from that pizza u cut that part and diffrenciate it,in that case u use slice method.it accepts 2 arguments.
+
+        let activities = ["playing", "singing", "reading", "walking", "sleeping"]
+        let slice = activities.slice(0, 3)
+        console.log(slice);
+        // o/p=>["playing","singing","reading"]
+
+
+        // 9]splice
+        let hobbies = ["cricket", "hockey", "volleyball", "bb"]
+        hobbies.splice(1, 1, "swimming", "bb");
+        console.log(hobbies);
+        // splice(index,howmany(delete),"new value")
+
+        //Sort
+        num7 = [4, 0, 5, 6, 4, 2, 2, 2, 5, 41, 34, 44, 33, 548, 547]
+        console.log(num7.sort((a, b) => { return (a - b) }))
+
+
+        const men = [
+            { name: "raj", age: 50 },
+            { name: "keval", age: 30 },
+            { name: "kevalqqq", age: 60 },
+
+        ]
+        const sort = men.sort((a, b) => {
+            return a.age - b.age
+        });
+        console.log(sort);
+
+
+        //10)foreach method
+        const arr = ["raj", "keval"];
+
+        arr.forEach((value, index, array) => {                          //take 3 parameter and return void means nothing
+            console.log(`${value} is at index [${index}] in ${array}`);
+        });
+
+        // const mai=[1,2,3,4,5,6,7,8,9,70];
+
+        // mai.forEach((val)=>{
+        //   const l=val*3;
+        //    console.log(l);
+        //   if( l <=20){
+        //     console.log("the values is less than 20");
+        //   }
+        //   else{
+        //     console.log(l);
+        //   }
+
+        // });
+
+        //sum using for each
+        // let arr1 = [40, 44, 0, 454, 444, 55]
+        // let sum = 0;
+        // let oblick = arr1.join("+");
+        // arr1.forEach(element => { sum += element; });
+        // console.log(`the sum of ${oblick}= ${sum}`);
+
+        //11) some:program :-is there any even value in array or not?
+        const mularray = [3, 5, 8, 7, 9]
+        const somearray = mularray.some(element => element % 2 == 0);
+        console.log(somearray);
+        //output : true (because ,in mularray there are more than one or atleast one value is even)
+
+        //12) every() find every value is even or not.
+
+        const everyarray = mularray.every(element => element % 2 == 0)
+        console.log(everyarray);
+        //output is false.because every is checked , there are every value is even in mularry.
+
+        // 13/14) indexOf/lastIndexOf
+
+        const index1 = ["raj", "keval", "mihir", "raj", "kushal"];
+        const i = index1.indexOf("raj");
+        console.log(i) // output is 0
+        const j = index1.lastIndexOf("raj");
+        console.log(j) //output is 3
+
+        // 15)filter : find percentage is greater than 85.
+
+        let employee = [
+            { name: "raj", percentage: "80" },
+            { name: "Mahi", percentage: "82" },
+            { name: "nupur", percentage: "84" },
+            { name: "sweta", percentage: "87" },
+            { name: "krishna", percentage: "95" }
+        ]
+
+        employee.filter(((item) => {
+            return item.percentage >= 85 ? console.log(item.name) : null
+        }));
+
+        //Find duplicate value and remove that value.
+        const raj = [1, 2, 3, 2, 4, 5, 6, 7, 8, 7, 4, 5, 24, 8, 56, 52, 5, 6, 5, 2, 1, 5, 885];
+        const newraj = [];
+
+        raj.forEach((item) => {
+            if (!item === newraj.includes(item))
+                newraj.push(item);
+        })
+
+        console.log(newraj);
+
+        // multiply for loop
+        let n = [1, 2, 3]
+
+        for (let i = 0; i < n.length; i++) {
+            n[i] *= 2;
+        }
+        console.log(n);
+
+        //    ===========================
+
+        let f = [12, 12]
+        f.length = 6;
+        console.log(f);
+        //output: [12, 12, empty × 4]2
+
+        let sp = "raj";
+
+        let p = sp.toUpperCase();
+
+        console.log(p);
+
+        //upper to lower and lower to upper
+        let swap = "rAaj,maahi";
+
+        let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let lower = 'abcdefghijklmnopqrstuvwxyz'
+
+        let res = [];
+
+        for (let i = 0; i < swap.length; i++) {
+            if (upper.indexOf(swap[i]) !== -1) {
+                res.push(swap[i].toLowerCase());
+            }
+            else {
+                res.push(swap[i].toUpperCase());
+            }
+        }
+
+        console.log(res.join(''));
+
+        // Write a JS code to delete all occurrence of element in given array.
+
+
+
+        function deleteElement(arr, ele) {
+            for (var i = 0; i < arry.length; i++) {
+                if (arry[i] == ele) {
+                    arr.splice(i, 1); //Delete element from array
+                }
+            }
+            return arr;
+        }
+        var arry = [23, 56, 4, 78, 5, 63, 45, 210, 56];
+        arry = deleteElement(arry, 56)
+
+        console.log(arry); //[23, 4, 78, 5, 63, 45, 210]
+    </script>
+</body>
+
+</html
