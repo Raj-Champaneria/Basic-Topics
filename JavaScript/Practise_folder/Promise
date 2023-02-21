@@ -1,0 +1,3 @@
+let myPromise = new Promise(function(myResolve, myReject) {
+setTimeout
+})

@@ -1,6 +1,6 @@
 let student = [
-  { roll_no: "1", name: "raj", address: "valsad", school: "avabai" },
-  { roll_no: "2", name: "keval", address: "surat", school: "rjj" },
+  { roll_no: "1", name: "raj", address: "valsad", school: "avabai",collage:"maliba" },
+  { roll_no: "2", name: "keval", address: "surat", school: "rjj" ,collage:"kbp"},
 ];
 
 let table = document.createElement("table");

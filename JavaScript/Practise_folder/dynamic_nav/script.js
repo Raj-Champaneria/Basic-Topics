@@ -21,11 +21,10 @@ for (const iterator of links) {
   li.appendChild(a);
   let litext = document.createTextNode(iterator.name);
   a.appendChild(litext);
-  a.setAttribute("href",iterator.link);
-  a.classList.add("a-decor","color");
-    li.classList.add("li-decor");
+  a.setAttribute("href", iterator.link);
+  a.classList.add("a-decor", "color");
+  li.classList.add("li-decor");
 }
 
-let body=document.querySelector("body");
+let body = document.querySelector("body");
 body.appendChild(aside);
-
