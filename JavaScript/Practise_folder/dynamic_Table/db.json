@@ -1,0 +1,372 @@
+{
+  "posts": [
+    {
+      "title": "json-server",
+      "author": "typicode",
+      "id": 1
+    },
+    {
+      "title": "json-server",
+      "author": "typicode",
+      "id": 2
+    },
+    {
+      "title": "json-server",
+      "author": "typicode",
+      "id": 3
+    },
+    {
+      "title": "json-server",
+      "author": "typicode",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "table": [
+    {
+      "id": 2,
+      "name": "keval",
+      "address": "surat",
+      "school": "rjj",
+      "collage": "kbp"
+    },
+    {
+      "id": 3,
+      "name": "Mihir",
+      "address": "America",
+      "school": "Ava bai",
+      "collage": "kbp"
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 4
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 5
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 6
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 7
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 8
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 9
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 10
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 11
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 12
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 13
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 14
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 15
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 16
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 17
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 18
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 19
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 20
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 21
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 22
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 23
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 24
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 25
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 26
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 27
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 28
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 29
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 30
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 31
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 32
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 33
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 34
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 35
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 36
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 37
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 38
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 39
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 40
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 41
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 42
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 43
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 44
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 45
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 46
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 47
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 48
+    },
+    {
+      "name": "raj",
+      "address": "valsad",
+      "school": "avabai",
+      "collage": "maliba",
+      "id": 49
+    }
+  ]
+}

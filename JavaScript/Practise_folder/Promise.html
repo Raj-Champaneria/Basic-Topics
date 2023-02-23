@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // function prom(complete) {
+        //     return new Promise(function (myResolve, myReject) {
+        //         console.log("fetching....");
+
+        //         setTimeout(() => {
+        //             if (complete) {
+        //                 myResolve("Here is successghg");
+        //             }
+        //             else {
+        //                 myReject("Here is an error");
+        //             }
+        //         }, 3000);
+
+        //     })
+        // }
+
+
+        // prom(false).then((res) => console.log(res)).catch((err) => console.log(err));
+
+        const myFirstPromise = new Promise((resolve, reject) => {
+            // We call resolve(...) when what we were doing asynchronously was successful, and reject(...) when it failed.
+            // In this example, we use setTimeout(...) to simulate async code.
+            // In reality, you will probably be using something like XHR or an HTML API.
+            setTimeout(() => {
+                resolve("Success!"); // Yay! Everything went well!
+            }, 2500);
+
+            setTimeout(()=>{
+                reject("Reject!!!!");
+            },5000)
+        });
+
+        myFirstPromise.then((successMessage) => {
+            // successMessage is whatever we passed in the resolve(...) function above.
+            // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+            console.log(`Yay! ${successMessage}`);
+        });
+        myFirstPromise.catch((message)=>{
+            console.log(`oops!${message}`)
+        })
+
+
+    </script>
+
+</body>
+
+</html>
