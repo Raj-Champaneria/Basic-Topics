@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "rajw",
+      "sname": "champawneriaa",
+      "age": 253
+    },
+    {
+      "name": "Mehek",
+      "sname": "Patel",
+      "id": 3
+    },
+    {
+      "name": "mAHI",
+      "sname": "pATEL",
+      "id": 4
+    },
+    {
+      "name": "Sweta",
+      "sname": "patel",
+      "id": 5
+    },
+    {
+      "name": "Sweta",
+      "sname": "patel",
+      "id": 6
+    },
+    {
+      "name": "Karan",
+      "sname": "Patel",
+      "id": 7
+    }
+  ]
+}
