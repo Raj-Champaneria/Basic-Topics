@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  height: 95%;
+}
+
+.img-div,
+.form-div {
+  flex: 1;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.main-img {
+  height: 100%;
+  width: 100%;
+}
+
+.registraion-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-div {
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.btn-register {
+  padding: 20px;
+  background-color: rgb(116, 212, 116);
+  font-size: 24px;
+  margin: auto;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.table-style {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border:1px solid black;
+}
+
+.table-th{
+    font-size:24px;
+    border-bottom: 3px solid ghostwhite;
+    padding: 20px;
+}
+.table-body-td{
+    padding: 20px;
+    font-size:18px;
+}
+.table-body-tr:nth-child(even){
+    background-color: wheat;
+    
+}
