@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "cricket": [
+    {
+      "fname": "Viren",
+      "lname": "Patel",
+      "age": "21",
+      "email": "Virenpatel5@gmail.com",
+      "gender": "male",
+      "ch": "red",
+      "username": "Viren",
+      "password": "Viren",
+      "id": 16
+    }
+  ]
+}

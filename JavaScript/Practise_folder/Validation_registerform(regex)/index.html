@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assests/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-heading">
+            <h1 class="register">Registration Here</h1>
+        </div>
+        <form>
+            <div class="input-field">
+                <div class="icon-div">
+                    <i class="fa-solid fa-user icon"></i>
+                    <input type="text" id="fname" placeholder="FirstName" name="fname" value="">
+                    <span id="fmsg" class="validation-msg"></span>
+                </div>
+                <div class="icon-div">
+                    <i class="fa-solid fa-user icon"></i>
+                    <input type="text" id="lname" placeholder="Last Name" name="lname" value="">
+                    <span id="lmsg" class="validation-msg"></span>
+                </div>
+                <div class="icon-div">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="text" id="email" placeholder="email" name="email" value="">
+                    <span id="emsg" class="validation-msg"></span>
+                </div>
+                <div class="icon-div">
+                    <i class="fa-solid fa-address-book icon"></i>
+                    <input type="text" id="contact" placeholder="Phone no." name="contact_no" maxlength="10">
+                    <span id="cmsg" class="validation-msg"></span>
+                </div>
+                <div class="icon-div">
+                    <i class="fas fa-rupee-sign icon"></i>
+                    <input type="text" id="salary" placeholder="Salary" name="salary">
+                </div>
+                <div class="icon-div">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <input type="password" id="password" placeholder="Password" name="password">
+                </div>
+                <button id="register">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="Assests/script.js"></script>
+</body>
+
+</html>

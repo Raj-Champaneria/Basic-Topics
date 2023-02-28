@@ -75,3 +75,15 @@ input[type="password"] {
     background-color: wheat;
     
 }
+
+.btn{
+  padding:10px 15px;
+  border:0;
+  border-radius:8px;
+  font-size:18px;
+}
+.btn-add{
+  background-color: skyblue;
+  color:white;
+  margin:10px 15px;
+}
