@@ -72,18 +72,20 @@ form button {
   border-radius: 0 5px 5px 0;
   caret-color: #339933;
 }
-input:focus {
+/* input:focus {
   color: #339933;
   background: linear-gradient(#333933, #222922);
-  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2), inset 0 0 5px rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2);
   animation: glow 0.4s ease-out infinite alternate;
-}
+} */
+
 button {
   margin-top: 30px;
   border-radius: 5px;
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  width: auto;
 }
 
 button:hover {
@@ -94,16 +96,15 @@ button:hover {
     0 0 15px rgba(0, 255, 0, 0.1), 0 2px 0 black;
 }
 
-.validation-msg{
-    color:red;
-    font-size:20px; 
+.validation-msg {
+  color: red;
+  font-size: 20px;
 }
-/* ::-webkit-input-placeholder {
-    text-align: center;
-  }
-   */
 
-@keyframes glow {
+
+
+
+/* @keyframes glow {
   0% {
     border-color: #339933;
     box-shadow: 0 0 5px rgba(0, 255, 0, 0.2), inset 0 0 5px rgba(0, 0, 0, 0.1);
@@ -113,3 +114,6 @@ button:hover {
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.2), inset 0 0 5px rgba(0, 0, 0, 0.1);
   }
 }
+ */
+
+ 

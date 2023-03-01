@@ -15,11 +15,7 @@ function addPlayer() {
   let password = document.getElementById("password").value;
   let gender = document.querySelector('input[name="season"]:checked').value;
   let ch = document.querySelector('input[name="color"]:checked').value;
-  // let values = [];
-
-  // ch.forEach((ch) => {
-  //   values.push(ch.value);
-  // });
+  
 
   fetch("http://localhost:3000/cricket", {
     method: "POST",

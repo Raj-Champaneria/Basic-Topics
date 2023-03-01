@@ -27,6 +27,17 @@
       "username": "Viren",
       "password": "Viren",
       "id": 16
+    },
+    {
+      "fname": "Jayesh",
+      "lname": "Champaneria",
+      "age": "12",
+      "email": "Rajchamapaneria5@gmail.com",
+      "gender": "male",
+      "ch": "Reading",
+      "username": "raj.champaneria",
+      "password": "qq",
+      "id": 19
     }
   ]
 }

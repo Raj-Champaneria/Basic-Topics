@@ -54,27 +54,27 @@ function tbody(t) {
         }
         let td = document.createElement("td");
         tr.appendChild(td);
-       
 
         //editbutton
         let editButton = document.createElement("button");
         let text2 = document.createTextNode("Edit");
         editButton.appendChild(text2);
-        
-         //DeleteButton 
-         let deleteButton = document.createElement("button");
-         let text1 = document.createTextNode("DELETE");
-         deleteButton.appendChild(text1);
-         td.appendChild(deleteButton);
-         deleteButton.addEventListener("click", () => {
-           deleteData(element.id);
-           table.deleteRow(tr.rowIndex);
-         });
+        editButton.addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+
+        //DeleteButton
+        let deleteButton = document.createElement("button");
+        let text1 = document.createTextNode("DELETE");
+        deleteButton.appendChild(text1);
+        td.appendChild(deleteButton);
+        deleteButton.addEventListener("click", () => {
+          deleteData(element.id);
+          table.deleteRow(tr.rowIndex);
+        });
 
         td.appendChild(editButton);
         td.appendChild(deleteButton);
-       
-
       }
     });
 }
@@ -86,6 +86,6 @@ function deleteData(element) {
 }
 
 tbody(table);
- 
+
 let body = document.querySelector("body");
 body.appendChild(table);

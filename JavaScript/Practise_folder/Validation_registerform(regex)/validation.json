@@ -1,0 +1,165 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "validation": [
+    {
+      "fname": "saf",
+      "lname": "Champaneria",
+      "email": "Rajchamapaneria5@1rivet.com",
+      "contact": "9825148585",
+      "salary": "12345",
+      "id": 1
+    },
+    {
+      "fname": "saf",
+      "lname": "saf",
+      "email": "Rajchamapaneria5@1rivet.com",
+      "contact": "9825148585",
+      "salary": "12345",
+      "id": 2
+    },
+    {
+      "fname": "sweta",
+      "lname": "dbgufud",
+      "email": "Rajchamapaneria5@gmail.com",
+      "contact": "9825148585",
+      "salary": "12345",
+      "id": 3
+    },
+    {
+      "fname": "saf",
+      "lname": "Champaneria",
+      "email": "Rajchamapaneria5@gmail.com",
+      "contact": "9999999999",
+      "salary": "12345",
+      "id": 4
+    },
+    {
+      "fname": "saf",
+      "lname": "Champaneria",
+      "email": "Rajchamapaneria5@gmail.com",
+      "contact": "9825148585",
+      "salary": "12345",
+      "id": 5
+    },
+    {
+      "fname": "maah",
+      "lname": "patel",
+      "email": "Rajchamapaneria5@1rivet.com",
+      "contact": "9825148585",
+      "salary": "12345",
+      "id": 6
+    },
+    {
+      "fname": "saf",
+      "lname": "Champaneria",
+      "email": "Rajchamapaneria5@1rivet.com",
+      "contact": "9825148587",
+      "salary": "12345",
+      "id": 7
+    },
+    {
+      "fname": "saf",
+      "lname": "Champaneria",
+      "email": "Rajchamapaneria5@gmail.com",
+      "contact": "9825148585",
+      "salary": "87944",
+      "id": 8
+    },
+    {
+      "fname": "Dhruvin",
+      "lname": "Patel",
+      "email": "Dhruvinpatel@1rivet.com",
+      "contact": "9825148585",
+      "salary": "12345",
+      "id": 9
+    },
+    {
+      "fname": {},
+      "lname": {},
+      "email": {},
+      "contact": {},
+      "salary": {},
+      "id": 10
+    },
+    {
+      "fname": {},
+      "lname": {},
+      "email": {},
+      "contact": {},
+      "salary": {},
+      "id": 11
+    },
+    {
+      "fname": "Keval",
+      "lname": "Patel",
+      "email": "kevalpatel@1rivet.com",
+      "contact": "9601583775",
+      "salary": "50000",
+      "id": 14
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "contact": "",
+      "salary": "",
+      "id": 15
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "contact": "",
+      "salary": "",
+      "id": 16
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "contact": "",
+      "salary": "",
+      "id": 17
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "contact": "",
+      "salary": "",
+      "id": 18
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "contact": "",
+      "salary": "",
+      "id": 19
+    },
+    {
+      "fname": "sfd",
+      "lname": "",
+      "email": "",
+      "contact": "",
+      "salary": "",
+      "id": 20
+    }
+  ]
+}
