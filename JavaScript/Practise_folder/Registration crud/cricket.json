@@ -18,17 +18,6 @@
   },
   "cricket": [
     {
-      "fname": "Viren",
-      "lname": "Patel",
-      "age": "21",
-      "email": "Virenpatel5@gmail.com",
-      "gender": "male",
-      "ch": "red",
-      "username": "Viren",
-      "password": "Viren",
-      "id": 16
-    },
-    {
       "fname": "Jayesh",
       "lname": "Champaneria",
       "age": "12",

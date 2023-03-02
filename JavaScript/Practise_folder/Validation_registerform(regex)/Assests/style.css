@@ -101,9 +101,6 @@ button:hover {
   font-size: 20px;
 }
 
-
-
-
 /* @keyframes glow {
   0% {
     border-color: #339933;
@@ -115,8 +112,14 @@ button:hover {
   }
 }
  */
-
  .green{
   border:1px solid green;
  }
- 
+
+ .input{
+  display:block;
+ }
+
+ .validation-msg{
+  display: block;
+ }

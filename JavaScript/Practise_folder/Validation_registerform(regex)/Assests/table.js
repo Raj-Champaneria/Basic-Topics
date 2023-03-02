@@ -1,0 +1,74 @@
+let table = document.createElement("table");
+table.classList.add("table")
+let headers = [
+  { header: "First Name", key: "fname" },
+  { header: "Last Name", key: "lname" },
+  { header: "Email", key: "email" },
+  { header: "Contact", key: "contact" },
+  { header: "Salary", key: "salary" },
+];
+function thead(t) {
+  let thead = table.createTHead("thead");
+  table.appendChild(thead);
+
+  for (const iterator of headers) {
+    let th=document.createElement("th");
+    thead.appendChild(th);
+    th.classList.add("table-th");
+    let text=document.createTextNode(iterator.header);
+    th.appendChild(text);
+  }
+}
+thead(table);
+
+function tbody(){
+    let tbody=table.createTBody("tbody");
+    table.appendChild(tbody);
+    // tbody.innerHTML=" "
+    
+    fetch("http://localhost:3000/validation")
+    .then(res=>res.json())
+    .then(data=>{
+        for (const element of data) {
+            let tr=document.createElement("tr");
+            tbody.appendChild(tr)
+            for (const iterator of headers) {
+               let td=document.createElement("td");
+               tr.appendChild(td);
+               let text=document.createTextNode(element[iterator["key"]]);
+               td.appendChild(text)
+            }
+        }
+    })
+}
+tbody()
+
+// let search=document.getElementById("search-input");
+// search.addEventListener("keyup",(e)=>{
+//     e.preventDefault();
+//     let tbody=table.createTBody("tbody");
+//     table.appendChild(tbody);
+//     fetch("http://localhost:3000/validation")
+//     .then(res=>res.json())
+//     .then(data=>{
+//         let array=data.filter(item=>search.value=" " || item.fname.includes(search.value));
+//         tbody.innerHTML=" "
+//         for (const element of array) {
+//             let tr=document.createElement("tr");
+//             tbody.appendChild(tr)
+//             for (const iterator of headers) {
+//                let td=document.createElement("td");
+//                tr.appendChild(td);
+//                let text=document.createTextNode(element[iterator["key"]]);
+//                td.appendChild(text)
+//             }
+//         }
+//     })
+// })
+
+
+let container=document.querySelector(".container");
+let div=document.createElement("div");
+container.appendChild(div);
+div.classList.add("div-wrapper");
+div.appendChild(table);

@@ -1,6 +1,7 @@
 let table = document.createElement("table");
 table.classList.add("table-style");
 
+
 let headers = [
   { header: "ID", key: "id" },
   { header: "First Name", key: "fname" },
@@ -32,6 +33,7 @@ function thead(t) {
 }
 thead(table);
 console.log(table);
+
 
 function tbody(t) {
   let tbody = table.createTBody("tbody");
@@ -89,3 +91,4 @@ tbody(table);
 
 let body = document.querySelector("body");
 body.appendChild(table);
+
