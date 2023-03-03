@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "form": [
+    {
+      "fname": "Ronak",
+      "description": "Jsdevloper",
+      "status": "audi",
+      "rate": "10",
+      "balance": "1000000",
+      "deposit": "100011",
+      "id": 16
+    },
+    {
+      "fname": "Ashish",
+      "description": "react",
+      "status": "volvo",
+      "rate": "123344",
+      "balance": "12555",
+      "deposit": "44444",
+      "id": 17
+    }
+  ]
+}
