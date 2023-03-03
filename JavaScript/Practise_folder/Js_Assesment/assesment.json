@@ -18,11 +18,11 @@
   },
   "form": [
     {
-      "fname": "Krishna",
+      "fname": "Krishna LAD",
       "description": "React",
       "status": "inactive",
       "rate": "123344",
-      "balance": "14444",
+      "balance": "1412",
       "deposit": "44444",
       "id": 18
     },
@@ -36,13 +36,13 @@
       "id": 19
     },
     {
-      "fname": "Ashish",
-      "description": "Mongo DB",
-      "status": "inactive",
-      "rate": "250050",
-      "balance": "2255000",
-      "deposit": "20215",
-      "id": 20
+      "fname": "Riya",
+      "description": "Reactt",
+      "status": "Open",
+      "rate": "111",
+      "balance": "11",
+      "deposit": "111",
+      "id": 21
     }
   ]
 }

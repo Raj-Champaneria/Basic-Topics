@@ -79,20 +79,7 @@ balance.addEventListener("keyup", (e) => {
   }
 });
 
-// let statusa=document.querySelector("#status");
-// let smsg=document.querySelector("#smsg");
 
-// statusa.addEventListener("keyup",(e)=>{
-//   if(!statusa.value=="status"){
-//     statusa.style.border="2px solid green";
-//     // document.querySelector("#smsg").innerHTML="*";
-//   }
-//   else{
-//     statusa.style.border="2px solid green";
-//     document.querySelector("#smsg").innerHTML="";
-
-//   }
-// })
 
 let deposit = document.querySelector("#deposit");
 let depomsg = document.querySelector("#depomsg");
@@ -161,7 +148,7 @@ btnsave.addEventListener("click", (e) => {
 
 let table = document.createElement("table");
 table.classList.add("table-css");
-let headers=[{header:"#",key:"id"},{header:"Name",key:"fname"},{header:"Description",key:"description"},{header:"Status",key:"status"},{header:"Rate",key:"rate"},{header:"Balance",key:"balance"},{header:"Deposit",key:"deposit"}]
+let headers=[{header:"#",key:"id"},{header:"NAME",key:"fname"},{header:"DESCRIPTION",key:"description"},{header:"STATUS",key:"status"},{header:"RATE",key:"rate"},{header:"BALANCE",key:"balance"},{header:"DEPOSIT",key:"deposit"}]
 
 
 function thead(t) {
@@ -184,45 +171,7 @@ function thead(t) {
 }
 thead(table);
 
-// function tbody(){
-//   let tbody=table.createTBody("tbody");
-//   table.appendChild(tbody);
-  
-//   fetch("http://localhost:3000/form")
-//   .then(res=>res.json())
-//   .then(data=>{
-//       for (const element of data) {
-//           let tr=document.createElement("tr");
-//           tr.classList.add("tabletr");
-//           tbody.appendChild(tr)
-//           for (const iterator of headers) {
-//              let td=document.createElement("td");
-//              tr.appendChild(td);
-//              let text=document.createTextNode(element[iterator["key"]]);
-//              td.appendChild(text)
-//           }
-//           let td = document.createElement("td");
-//         tr.appendChild(td);
-//         let btnEdit = document.createElement("button");
-//         let edittext = document.createTextNode("EDIT");
-//         btnEdit.appendChild(edittext);
-//         let Deletetext = document.createTextNode("DELETE");
-//         let btnDelete = document.createElement("button");
-//         btnDelete.appendChild(Deletetext);
-//         td.appendChild(btnEdit);
-//         td.appendChild(btnDelete);
 
-//         btnDelete.addEventListener("click", (e)=>{
-//           e.preventDefault();
-//           fetch(`http://localhost:3000/form/${element.id}`, {
-//             method: "DELETE",
-//           });
-//         });
-
-       
-//       }
-//   })
-// }
 function tbody(t) {
   let tbody = table.createTBody("tbody");
   table.appendChild(tbody);

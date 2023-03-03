@@ -8,7 +8,7 @@ body {
   height: 100%;
 }
 body {
-  background-color: #ebf0fa;
+  background-color: #FFFFFF;
 }
 .dropbtn {
   background-color: #3498db;
@@ -27,6 +27,9 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+  border-radius:6px;
+  
 }
 
 .dropdown-content {
@@ -55,9 +58,7 @@ body {
 }
 
 /* form css*/
-.container {
-  justify-content: center;
-}
+
 
 .d-flex {
   display: flex;
@@ -68,63 +69,66 @@ body {
 }
 
 input[type="text"] {
-  width: 350px;
-  padding: 15px;
+  width: 550px;
+  padding: 10px;
   border-radius: 8px;
   border: 1px solid rgb(224, 221, 218);
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: sans-serif;
 }
 
 select {
-  width: 350px;
-  padding: 15px;
+  width: 550px;
+  padding: 10px;
   border-radius: 8px;
   border: 1px solid rgb(224, 221, 218);
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .mt-20 {
   margin-top: 20px;
 }
 .m-20 {
-  margin: 20px;
+  margin: 10px 20px ;
 }
 input {
   outline: none;
 }
-.wrapper {
-  padding: 20px;
-}
+
 
 .table-css {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid black;
+  border-collapse: collapse;
+
 }
+
 tr:nth-child(even) {
-  background-color: rgb(210, 228, 234);
+  background-color: #EBF0FA;
+ 
 }
 tr:nth-child(odd) {
-  background-color: rgb(205, 217, 221);
+  background-color: #FFFFFF;
 }
 td,
 th {
-  padding: 20px;
+  padding: 10px;
 }
 th {
-  background-color: blanchedalmond;
-  border: 1px solid black;
-  font-size: 24px;
+  background-color:  #FFFFFF;
+  font-size: 14px;
+  color:#464F60;
 }
 td {
   font-size: 20px;
+  color:#464F60;
 }
 .table-update-btn {
   color: white;
   padding: 12px;
-  background-color: rgb(14, 2, 3);
+  background-color: rgb(118, 184, 111);
   border-radius: 6px;
   margin-right: 8px;
   border: 0;
@@ -133,7 +137,7 @@ td {
 .table-delete-btn {
   color: white;
   padding: 12px;
-  background-color: rgb(215, 117, 117);
+  background-color: rgb(207, 20, 20);
   border-radius: 6px;
   margin-right: 8px;
   border: 0;
@@ -143,6 +147,8 @@ td {
   justify-content: end;
   margin-right: 20px;
   gap: 20px;
+  background-color:#EBF0FA;
+  padding:20px;
 }
 
 .btn {
@@ -156,7 +162,7 @@ td {
 }
 
 .btn-save {
-  background-color: #020c13;
+  background-color:#2264E5;
 }
 
 .btn-cancel {
@@ -169,23 +175,35 @@ td {
 .toggle-div {
   justify-content: space-between;
   align-items: center;
+  margin: 0px 20px;
 }
-.add-register {
-  background-color: #2980b9;
-  cursor: pointer;
-}
+
 
 input[type="text"]::placeholder {
   font-size: 18px;
 }
 label {
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color:#464F60;
 }
 .validation-msg {
   color: red;
   font-size: 14px;
   animation: shake 0.5s 500;
+}
+.dropbtn{
+  background-color: white;
+  color:#2264E5;
+}
+
+.add-register{
+  background-color:#2264E5;
+  margin-right:20px;
+}
+
+.dropbtn:hover{
+  color: white;
 }
 @keyframes shake {
   25% {

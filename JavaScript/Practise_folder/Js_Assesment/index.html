@@ -7,98 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <div class="wrapper">
 
-    
-    <div class="toggle-div d-flex">
-        <div class="dropdown m-20">
-            <button onclick="myFunction()" class="dropbtn btn">Status</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a>open</a>
-                <a>Error</a>
-                <a>Inactive</a>
-                <a>Success</a>
+
+        <div class="toggle-div d-flex">
+            <div class="dropdown m-20">
+                <button onclick="myFunction()" class="dropbtn btn">Status</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a>open</a>
+                    <a>Error</a>
+                    <a>Inactive</a>
+                    <a>Success</a>
+                </div>
             </div>
-        </div>
-        <div class="search">
+            <!-- <div class="search">
             <input type="text" name="" id="search" placeholder="search by status" onkeyup="tablesearch()">
+        </div> -->
+            <div class="add-customer ">
+                <button class="add-register btn" id="addcustomer">+ Add Customer</button>
+            </div>
         </div>
-        <div class="add-customer ">
-            <button class="add-register btn" id="addcustomer">+ Add Register</button>
+
+
+        <div class="container ">
+            <form class="m-20" id="form">
+                <div class="upper-row d-flex ">
+                    <div class="name m-20">
+                        <label>Name</label>
+                        <div class="input">
+                            <input type="text" name="fname" id="fname" placeholder="Enter Name">
+                        </div>
+                        <div id="fmsg" class="validation-msg"></div>
+                    </div>
+                    <div class="name m-20">
+                        <label>Description</label>
+                        <div class="input">
+                            <input type="text" name="description" id="description" placeholder="Enter Description">
+                        </div>
+                        <div id="dismsg" class="validation-msg"></div>
+                    </div>
+                    <div class="name m-20">
+                        <label>STATUS</label>
+                        <div class="input">
+                            <select name="status" id="status">
+                                <option value="status">status</option>
+                                <option value="Success">Success</option>
+                                <option value="Open">Open</option>
+                                <option value="inactive">inactive</option>
+                                <option value="error">error</option>
+                            </select>
+                        </div>
+                        <div id="smsg" class="validation-msg"></div>
+                    </div>
+                </div>
+                <div class="lower-row d-flex ">
+                    <div class="name  m-20">
+                        <label>Rate</label>
+                        <div class="input">
+                            <input type="text" name="rate" id="rate" placeholder="Enter Rate">
+                        </div>
+                        <div id="ratemsg" class="validation-msg"></div>
+                    </div>
+                    <div class="name m-20">
+                        <label>Balance</label>
+                        <div class="input">
+                            <input type="text" name="balance" id="balance" placeholder="Enter Balance">
+                        </div>
+                        <div id="bmsg" class="validation-msg"></div>
+
+                    </div>
+                    <div class="name m-20">
+                        <label>Deposit</label>
+                        <div class="input">
+                            <input type="text" name="deposit" id="deposit" placeholder="Enter Deposit">
+                        </div>
+                        <div id="depomsg" class="validation-msg"></div>
+                    </div>
+                </div>
+                <div class="button-div d-flex">
+                    <button type="reset" class="btn btn-cancel" id="cancelbtn">cancel</button>
+                    <button id="savebtn" class="btn btn-save">Save</button>
+                    <button type="update" class="btn btn-update" id="update">update</button>
+
+                </div>
+            </form>
         </div>
     </div>
-    
-
-    <div class="container d-flex">
-        <form class="m-20" id="form">
-            <div class="upper-row d-flex mt-20">
-                <div class="name m-20">
-                    <label>Name</label>
-                    <div class="input">
-                        <input type="text" name="fname" id="fname" placeholder="Enter Name">
-                    </div>
-                    <div id="fmsg" class="validation-msg"></div>
-                </div>
-                <div class="name m-20">
-                    <label>Description</label>
-                    <div class="input">
-                        <input type="text" name="description" id="description" placeholder="Enter Description">
-                    </div>
-                    <div id="dismsg" class="validation-msg"></div>
-                </div>
-                <div class="name m-20">
-                    <label>STATUS</label>
-                    <div class="input">
-                        <select name="status" id="status" >
-                            <option value="status">status</option>
-                            <option value="Success">Success</option>
-                            <option value="Open">Open</option>
-                            <option value="inactive">inactive</option>
-                            <option value="error">error</option>
-                          </select>
-                    </div>
-                    <div id="smsg" class="validation-msg"></div>
-                </div>
-            </div>
-            <div class="lower-row d-flex mt-20">
-                <div class="name  m-20">
-                    <label>Rate</label>
-                    <div class="input">
-                        <input type="text" name="rate" id="rate" placeholder="Enter Rate">
-                    </div>
-                    <div id="ratemsg" class="validation-msg"></div>
-                </div>
-                <div class="name m-20">
-                    <label>Balance</label>
-                    <div class="input">
-                        <input type="text" name="balance" id="balance" placeholder="Enter Balance">
-                    </div>
-                    <div id="bmsg" class="validation-msg"></div>
-
-                </div>
-                <div class="name m-20">
-                    <label>Deposit</label>
-                    <div class="input">
-                        <input type="text" name="deposit" id="deposit" placeholder="Enter Deposit">
-                    </div>
-                    <div id="depomsg" class="validation-msg"></div>
-                </div>
-            </div>
-            <div class="button-div d-flex">
-                <button id="savebtn" class="btn btn-save">Save</button>
-                <button type="reset" class="btn btn-cancel" id="cancelbtn">cancel</button>
-                <button type="update" class="btn btn-update" id="update">update</button>
-
-            </div>
-        </form>
-    </div>
-</div>
 
     <script src="./assests/js/index.js"></script>
 </body>
 
 </html>
-
