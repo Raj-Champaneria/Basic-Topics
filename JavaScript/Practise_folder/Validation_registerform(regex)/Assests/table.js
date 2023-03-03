@@ -31,6 +31,7 @@ function tbody(){
     .then(data=>{
         for (const element of data) {
             let tr=document.createElement("tr");
+            tr.classList.add("tabletr");
             tbody.appendChild(tr)
             for (const iterator of headers) {
                let td=document.createElement("td");
@@ -66,6 +67,32 @@ tbody()
 //     })
 // })
 
+function tablesearch() {
+  let input, filter, table, tr, td, i, txtval;
+
+  input = document.getElementById("searchinput");
+  filter = input.value.toUpperCase();
+  console.log(filter);
+  table = document.getElementsByClassName("table");
+  tr = document.getElementsByClassName("tabletr");
+  td=document.getElementsByClassName("tabletd");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+
+
+    if (td) {
+      txtval = td.textContent || td.innetText;
+      if (txtval.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+
+}
 
 let container=document.querySelector(".container");
 let div=document.createElement("div");

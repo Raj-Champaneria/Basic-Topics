@@ -260,7 +260,8 @@ register.addEventListener("click", (e) => {
     contact == "" ||
     salary == "" ||
     password == ""
-  ) {
+  ) 
+  {
     alert("please fill all fields");
   } else if (
     fmsg.innerHTML == "" &&

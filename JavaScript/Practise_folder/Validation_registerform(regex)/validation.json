@@ -584,6 +584,22 @@
       "contact": "9825148585",
       "salary": "12345",
       "id": 7
+    },
+    {
+      "fname": "dsd",
+      "lname": "dfsd",
+      "email": "Rajchamapaneria5@1rivet.com",
+      "contact": "9825148585",
+      "salary": "5100",
+      "id": 8
+    },
+    {
+      "fname": "sf",
+      "lname": "sfd",
+      "email": "Rajchamapaneria5@1rivet.com",
+      "contact": "9825148585",
+      "salary": "22222",
+      "id": 9
     }
   ]
 }
