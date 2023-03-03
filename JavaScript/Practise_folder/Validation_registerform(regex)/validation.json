@@ -600,6 +600,14 @@
       "contact": "9825148585",
       "salary": "22222",
       "id": 9
+    },
+    {
+      "fname": "Preet",
+      "lname": "Patel",
+      "email": "psxaf@1rivet.com",
+      "contact": "9858958888",
+      "salary": "858585",
+      "id": 10
     }
   ]
 }
