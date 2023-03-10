@@ -1,0 +1,23 @@
+<app-header></app-header>
+{{data.name1}}
+<h1 [style]="style" [class]="class1">Hello my name is {{name}}</h1>
+<button (click)="myfun()">Click me</button>
+
+<input type="text" name="name" [(ngModel)]="name" >
+
+<table border="1">
+    <tr>
+        <td [attr.colspan]="num">Student Data</td>
+    </tr>
+    <tr>
+        <td>
+            Name
+        </td>
+        <td>
+            Surname
+        </td>
+        <td>
+            tech
+        </td>
+    </tr>
+</table>

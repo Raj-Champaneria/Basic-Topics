@@ -98,7 +98,6 @@ deposit.addEventListener("keyup", (e) => {
 
 btnsave = document.getElementById("savebtn");
 btnsave.addEventListener("click", (e) => {
-  // e.preventDefault();
   let fname = document.querySelector("#fname").value;
   let description = document.querySelector("#description").value;
   let status = document.querySelector("#status").value;
