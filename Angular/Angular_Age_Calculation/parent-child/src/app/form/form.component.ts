@@ -110,10 +110,14 @@ export class FormComponent  {
   uname!: string;
   constructor() {}
 
+ 
+
 
   private getAge(dateOfBirth: string):number {
     const dob = new Date(dateOfBirth).getTime();
     const currentDate = new Date().getTime();
     return Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24 * 365));
   }
+
+ 
 }

@@ -8,12 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'parent-child';
 
-  //P2c
-  // public name = 'raj';
-
-  //c2p
-
-  // parentFunc(data?:any){
-  //   console.log(data);
-  // }
+ 
 }

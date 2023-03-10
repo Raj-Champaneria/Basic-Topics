@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parent_child_conversation';
+  parentFunc(data:any){
+    console.log(data);
+  }
 }
