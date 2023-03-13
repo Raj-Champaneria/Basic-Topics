@@ -57,7 +57,6 @@ export class ChildComponentComponent {
     let obj={
       name:this.name,
       dateofbirth:this.dob
-
     }
     this.callparentFunc.emit(obj)
   }

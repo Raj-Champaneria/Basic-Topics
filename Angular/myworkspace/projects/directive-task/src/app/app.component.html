@@ -1,0 +1,59 @@
+<table [style.border]="border">
+  <tr *ngFor="let item of header">
+    <th>
+      <h1>{{item.id}}</h1>
+    </th>
+    <th>
+      <h1>{{item.name}}</h1>
+    </th>
+    <th>
+      <h1>{{item.Per}}</h1>
+    </th>
+    <th>
+      <h1>{{item.action}}</h1>
+    </th>
+  </tr>
+  <tr *ngFor="let item of student">
+    <td [class.color]="td">
+      <h1>{{item.id}}</h1>
+    </td>
+    <td [class.color]="td">
+      <h1>{{item.name}}</h1>
+    </td>
+    <td>
+      <h1>{{item.percentage}}</h1>
+    </td>
+    <td *ngIf="item.pass"><button>Submit Form</button></td>
+  </tr>
+</table>
+
+<h2>Week Days</h2>
+
+<div class="days" (change)="getday($event)">
+  <label for="sunday">Sunday</label>
+  <input type="radio" name="days" id="sunday" value="sunday"><br><br>
+  <label for="monday">Monday</label>
+  <input type="radio" name="days" id="monday" value="monday"><br><br>
+  <label for="tuesday">Tuesday</label>
+  <input type="radio" name="days" id="tuesday" value="tuesday"><br><br>
+  <label for="wednesday">Wednesday</label>
+  <input type="radio" name="days" id="wednesday" value="wednesday"><br><br>
+  <label for="thursday">Thursday</label>
+  <input type="radio" name="days" id="thursday" value="thursday"><br><br>
+  <label for="Friday">Friday</label>
+  <input type="radio" name="days" id="Friday" value="friday"><br><br>
+ 
+</div>
+
+
+<div [ngSwitch]="selectday">
+ <p *ngSwitchCase="'sunday'">Today is Sunday</p>
+ <p *ngSwitchCase="'monday'">Today is monday</p>
+ <p *ngSwitchCase="'tuesday'">Today is tuesday</p>
+ <p *ngSwitchCase="'wednesday'">Today is wednesday</p>
+ <p *ngSwitchCase="'thursday'">Today is thursday</p>
+ <p *ngSwitchCase="'friday'">Today is friday</p>
+ <p *ngSwitchDefault="'friday'">Today is saturday</p>
+</div>
+
+<app-attribute-directive></app-attribute-directive>
