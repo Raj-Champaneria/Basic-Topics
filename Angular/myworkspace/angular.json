@@ -96,6 +96,100 @@
           }
         }
       }
+    },
+    "pipe-task": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/pipe-task",
+      "sourceRoot": "projects/pipe-task/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/pipe-task",
+            "index": "projects/pipe-task/src/index.html",
+            "main": "projects/pipe-task/src/main.ts",
+            "polyfills": "projects/pipe-task/src/polyfills.ts",
+            "tsConfig": "projects/pipe-task/tsconfig.app.json",
+            "assets": [
+              "projects/pipe-task/src/favicon.ico",
+              "projects/pipe-task/src/assets"
+            ],
+            "styles": [
+              "projects/pipe-task/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/pipe-task/src/environments/environment.ts",
+                  "with": "projects/pipe-task/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "pipe-task:build:production"
+            },
+            "development": {
+              "browserTarget": "pipe-task:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "pipe-task:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pipe-task/src/test.ts",
+            "polyfills": "projects/pipe-task/src/polyfills.ts",
+            "tsConfig": "projects/pipe-task/tsconfig.spec.json",
+            "karmaConfig": "projects/pipe-task/karma.conf.js",
+            "assets": [
+              "projects/pipe-task/src/favicon.ico",
+              "projects/pipe-task/src/assets"
+            ],
+            "styles": [
+              "projects/pipe-task/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   },
   "cli": {

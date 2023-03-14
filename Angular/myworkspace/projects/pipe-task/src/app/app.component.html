@@ -1,0 +1,11 @@
+<h1 [ngClass]="'class1 class2'">{{name |uppercase}}</h1>
+<input type="text" name="" id="" [(ngModel)]="filterstring">
+<button>Click Me</button>
+<table [ngClass]="'tablecss'">
+  <tr *ngFor="let item of employee | filter:filterstring">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.salary}}</td>
+    <td>{{item.phone}}</td>
+  </tr>
+</table>

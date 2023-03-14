@@ -271,8 +271,6 @@ function tablesearch() {
 
 }
 
-
-
 console.log(table);
 let body=document.querySelector("body");
 body.appendChild(table)
