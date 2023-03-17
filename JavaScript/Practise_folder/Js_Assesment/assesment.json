@@ -18,15 +18,6 @@
   },
   "form": [
     {
-      "fname": "Krishna LAD",
-      "description": "React",
-      "status": "inactive",
-      "rate": "123344",
-      "balance": "1412",
-      "deposit": "44444",
-      "id": 18
-    },
-    {
       "fname": "Ashish",
       "description": "Mongo DB",
       "status": "Success",
@@ -34,6 +25,33 @@
       "balance": "2255000",
       "deposit": "20215",
       "id": 19
+    },
+    {
+      "fname": "Raj",
+      "description": "champaneria",
+      "status": "Open",
+      "rate": "123344",
+      "balance": "14444",
+      "deposit": "44444",
+      "id": 20
+    },
+    {
+      "fname": "JOHN",
+      "description": "doe",
+      "status": "Success",
+      "rate": "4365873",
+      "balance": "6578678",
+      "deposit": "45756",
+      "id": 21
+    },
+    {
+      "fname": "JOHN",
+      "description": "doe",
+      "status": "Open",
+      "rate": "4365873",
+      "balance": "6578678",
+      "deposit": "45756",
+      "id": 22
     }
   ]
 }

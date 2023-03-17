@@ -20,6 +20,7 @@ export class AppComponent {
     {"id":1,"name":"Raj","salary":5000,"phone":987959599},
     {"id":2,"name":"Keval","salary":6000,"phone":8888888599},
     {"id":3,"name":"Mihir","salary":7000,"phone":987959599},
+    {"id":4,"name":"Kushal","salary":8000,"phone":987959599},
     {"id":4,"name":"Kushal","salary":8000,"phone":987959599}
   ];
 }

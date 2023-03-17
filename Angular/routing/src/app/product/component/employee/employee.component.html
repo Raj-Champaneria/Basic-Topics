@@ -1,0 +1,5 @@
+<p>employee works!</p>
+
+<div *ngFor="let item of empArr">
+    <a routerLink="/employeeDetail/{{item | json}}" >{{item.name}}</a>
+</div>
