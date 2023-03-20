@@ -132,7 +132,9 @@ li {
     flex-direction: column;
     overflow: scroll;
 }
-
+.hamberger{
+    cursor:pointer
+}
 .main-table-container {
     border-radius: 8px;
     border: 1px solid #dfe0eb;
