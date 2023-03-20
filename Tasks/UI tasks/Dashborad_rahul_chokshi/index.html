@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- wrapper-class contains whole page in one container -->
+    <div class="wrapper display-flex">
+        <input type="checkbox" name="" id="check-list">
+        <!-- aside for sidebar container -->
+        <aside class="aside">
+            <div class="dashboard-kit-sidebar ">
+                <div class="dashboard-header display-flex align-center pt-40">
+                    <div class="dashboard-logo logo display-flex justify-content-center align-center mx-15  ">
+                        D
+                    </div>
+                    <h3 class="fw-600 letter-spacing-2">Dashboard Kit</h3>
+                </div>
+                <div class="dashboard-nav my-35">
+                    <nav>
+                        <ul class="user-interaction display-flex flex-column border-bottom">
+                            <li class="p-20 ">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <a class="mx-20">Overview</a>
+                            </li>
+                            <li class="p-20 active">
+                                <i class="fa-solid fa-ticket "></i>
+                                <a class="mx-20 ">Tickets</a>
+                            </li>
+                            <li class="p-20  li-ideas">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <a class="mx-20">ideas</a>
+                            </li>
+                            <li class="p-20  li-contact">
+                                <i class="fa-solid fa-users"></i>
+                                <a class="mx-20">Contacts</a>
+                            </li>
+                            <li class="p-20 li-colr">
+                                <i class="fa-solid fa-user"></i>
+                                <a class="mx-20">Agents</a>
+                            </li>
+                            <li class="p-20 ">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <a class="mx-20">Articles</a>
+                            </li>
+                        </ul>
+                        <ul class="user-helper display-flex flex-column  ">
+                            <li class="p-20 ">
+                                <i class="fa-solid fa-gear"></i>
+                                <a class="mx-20">Setting</a>
+                            </li>
+                            <li class="p-20 ">
+                                <i class="fa-solid fa-medal"></i>
+                                <a class="mx-20">Subscription</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+        <!-- aside ended -->
+        <main class="p-25 main-container ">
+            <header class="display-flex justify-content-between align-center mb-30">
+                <h2>
+                    <label for="check-list">
+                    <i class="fa-solid fa-bars hamberger px-5"></i>
+                     Tickets</h2></label>
+                <div class="header-search display-flex align-center">
+                    <i class="fa-solid fa-magnifying-glass p-15"></i>
+                    <i class="fa-solid fa-bell  p-15 border-right bell"></i>
+                    <h6 class="px-20 fw-600 ">Raj chamapneria</h6>
+                    <div class="img-div">
+                        <img src="./assests/images/malecostume-512.webp" alt="" class="header-image">
+                    </div>
+                </div>
+            </header>
+    
+                <div class="main-table-container">
+                    <header class="p-20 display-flex justify-content-between">
+                        <h3>All tickets</h3>
+                        <div class="sort-filter display-flex ">
+                            <div class="sorting-item px-15">
+                                <i class="fa-solid fa-arrow-up-wide-short px-10"></i>
+                                <a>Sort</a>
+                            </div>
+                            <div class="filter-item px-15 ">
+                                <i class="fa-solid fa-filter px-10"></i>
+                                <a>Filter</a>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="display-flex">
+                        <table class="table">
+                            <thead>
+                                <th class="first-th">Ticket details</th>
+                                <th>Customer Name</th>
+                                <th>Date</th>
+                                <th>Prority</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/3.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Contact Email Not Linked</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Tom Cruise</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/3.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Contact Email Not Linked</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Tom Cruise</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/3.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Contact Email Not Linked</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Tom Cruise</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/3.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Contact Email Not Linked</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Tom Cruise</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/2.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Adding Images to Feature Posts</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Mat Damon</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge-low">
+                                            Low
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/1.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">When will I be charged this month?</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Robbert Dawney</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge-normal">
+                                            Normal
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/3.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Contact Email Not Linked</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Tom Cruise</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/2.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Adding Images to Feature Posts</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Mat Damon</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge-low">
+                                            Low
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/1.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">When will I be charged this month?</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Robbert Dawney</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge-normal">
+                                            Normal
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/3.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Contact Email Not Linked</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Tom Cruise</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-complain p-20 display-flex align-center">
+                                            <div class="icon-div">
+                                                <img src="assests/images/2.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="complain-description px-20 ">
+                                                <p class="data-head fw-700">Adding Images to Feature Posts</p>
+                                                <p class="data-time mt-5 fw-400">Updated 1day ago</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="customer-name">
+                                            <p class="customer-head fw-700">Mat Damon</p>
+                                            <p class="customer-time mt-5 fw-400">on 24.05.2019</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user-date">
+                                            <p class="date-head fw-700">May 26,2019</p>
+                                            <p class="date-time mt-5 fw-400">6:30pm</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="bedge-low">
+                                            Low
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-ellipsis-vertical px-10"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="footer align-center">
+                        <label class="row-label">Rows per Pages</label>
+                        <select>
+                            <option>8</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                        <p class="mx-20 row-label">1-8 of 1240</p>
+                        <button><i class="fa-solid fa-less-than"></i></button>
+                        <button><i class="fa-solid fa-greater-than"></i></button>
+                    </div>
+                </div>
+        </main>
+    </div>
+</body>
+
+</html>
