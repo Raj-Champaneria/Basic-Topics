@@ -210,7 +210,7 @@ table {
     min-width:1000px;
 }
 table tr:hover{
-    cursor:;
+    cursor:grab;
     background-color: #f7f8ff;
 }
 .first-th {
@@ -635,3 +635,6 @@ select {
 .border {
     border: 1px solid black;
 }
+/* .fa-solid{
+    width: 20px;
+} */

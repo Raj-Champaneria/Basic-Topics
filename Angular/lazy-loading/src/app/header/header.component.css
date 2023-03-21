@@ -1,0 +1,15 @@
+li{
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size:24px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    padding: 20px;;
+}
