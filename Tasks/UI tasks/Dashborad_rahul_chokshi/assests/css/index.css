@@ -210,7 +210,7 @@ table {
     min-width:1000px;
 }
 table tr:hover{
-    cursor:grab;
+    cursor:;
     background-color: #f7f8ff;
 }
 .first-th {
