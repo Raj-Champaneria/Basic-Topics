@@ -37,7 +37,6 @@ export class TableComponent implements OnInit {
     { id: 21, name: "raj", surname: "champaneria" },
     { id: 22, name: "raj", surname: "champaneria" },
     { id: 23, name: "raj", surname: "champaneria" },
-
     { id: 5, name: "raj", surname: "champaneria" },
     { id: 6, name: "raj", surname: "champaneria" },
     { id: 7, name: "raj", surname: "champaneria" },
@@ -58,7 +57,10 @@ export class TableComponent implements OnInit {
     { id: 22, name: "raj", surname: "champaneria" },
     { id: 23, name: "raj", surname: "champaneria" },
   ]
-
+  //pagination on table data
+public mydata:any;
+public fIndex:any;
+public lIndex:any;
   constructor() { }
 
   ngOnInit(): void {
@@ -68,10 +70,13 @@ export class TableComponent implements OnInit {
       console.log(this.btnArr);
     }
     console.log(Math.ceil(this.buttonNum));
+    this.mydata=this.tableArr.filter(i=>this.tableArr.indexOf(i)>=0 && this.tableArr.indexOf(i)<=9)
   }
    specific(data:any){
-    console.log(data);
-
+    this.fIndex = (data.target.value - 1)*10;
+    this.lIndex = this.fIndex + (this.limit - 1)
+    this.mydata=this.tableArr.filter(i=>this.tableArr.indexOf(i)>=this.fIndex && this.tableArr.indexOf(i)<=this.lIndex)
   }
+  //pagination ended 
 
 }

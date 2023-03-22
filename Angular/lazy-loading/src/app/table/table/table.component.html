@@ -1,14 +1,14 @@
 <p>table works!</p>
 <table>
-    <thead>
-        <tr *ngFor="let items of tablehead">
+    <thead >
+        <tr *ngFor="let items of tablehead" >
             <td>{{items.id}}</td>
             <td>{{items.name}}</td>
             <td>{{items.surname}}</td>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let items of tableArr">
+        <tr *ngFor="let items of mydata">
             <td>{{items.id}}</td>
             <td>{{items.name}}</td>
             <td>{{items.surname}}</td>
@@ -19,7 +19,7 @@
 
 
 <div class="pagination"  *ngFor="let items of btnArr">
-    <button (click)="specific($event)">
+    <button (click)="specific($event)" value={{items}}>
         {{items}}
     </button>
 </div>

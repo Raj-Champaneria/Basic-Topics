@@ -1,4 +1,9 @@
 table{
     width:100%;
     border:1px solid black;
+    text-align: center;
+}
+
+.table-header{
+    border-bottom:1px solid black;
 }
