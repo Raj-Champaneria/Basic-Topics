@@ -1,1 +1,71 @@
-<p>reactive-form works!</p>
+<div class="form d-flex justify-content-center my-5 ">
+    <form class="w-50 " [formGroup]="rajreactiveform" (ngSubmit)="onSubmit()">
+        <div class="form-group ">
+            <label for="first-name">Enter FirstName</label>
+            <input type="first-name" class="form-control" id="first-name" aria-describedby="emailHelp"
+                placeholder="Enter First Name" formControlName="firstname">
+            <span class="text-danger"
+                *ngIf="!rajreactiveform.get('firstname')?.valid && rajreactiveform.get('firstname')?.touched  ">pease
+                enter valid name</span>
+        </div>
+        <div class="form-group ">
+
+            <label for="email">Email address {{rajreactiveform.get('email')?.errors?.['email']}}</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"
+                formControlName="email">
+            <span *ngIf="rajreactiveform.get('email')?.errors?.['required'] && rajreactiveform.get('email')?.touched ">required</span>
+            <span *ngIf="rajreactiveform.get('email')?.errors?.['pattern'] && rajreactiveform.get('email')?.touched">Please Enter Valid email address</span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+            <span *ngIf="!rajreactiveform.get('password')?.valid && rajreactiveform.get('password')?.touched">Password
+                length should minimum 6 characters</span>
+            <span *ngIf="!rajreactiveform.get('password')?.valid && rajreactiveform.get('password')?.touched">Password
+                    length should minimum 6 characters</span>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="confirmPassword"
+                formControlName="confirmPassword">
+            <span *ngIf="!rajreactiveform.get('confirmPassword')?.valid"></span>
+
+        </div>
+
+
+        <div formGroupName="address-Group">
+            <div class="form-group">
+                <label for="Address1">Address1</label>
+                <input type="Address1" class="form-control" id="Address1" placeholder="Address1"
+                    formControlName="address1">
+                <span *ngIf="!rajreactiveform.get('address-Group.address1')?.valid"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmAddress2">Confirm Address2</label>
+                <input type="Address2" class="form-control" id="confirmAddress2" placeholder="confirmAddress2"
+                    formControlName="address2">
+                <span *ngIf="!rajreactiveform.get('address-Group.address2')?.valid"></span>
+
+            </div>
+        </div>
+
+        <select class="form-control form-control-md">
+            <option>Angular</option>
+            <option>React</option>
+            <option>Vue</option>
+        </select> 
+       
+
+         <div class="form-group" formArrayName="hobbies">
+            <label for="hobbies">hobbies</label>
+            
+            <!-- <ng-container *ngFor="let hobby of rajreactiveform.get('hobbies')">
+
+                <input type="hobbies" class="form-control" id="hobbies" placeholder="hobbies">
+            </ng-container>-->
+            <button class="btn btn-light btn btn-sm mt-3 btn-add"><i>+</i>Add Hobbies</button>
+        </div> 
+        <button type="submit" class="btn btn-primary my-3" [disabled]="!rajreactiveform.valid">Submit</button>
+    </form>
+</div>
