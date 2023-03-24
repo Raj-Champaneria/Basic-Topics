@@ -1,0 +1,35 @@
+nav{
+    /* padding:20px; */
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+
+li{
+    color:white;
+    list-style: none;
+    display: flex;
+}
+ul li:hover a{
+    background-color: beige;
+    color:black;
+    transition: 1s;
+}
+
+
+a{
+    font-size:25px;
+    text-decoration: none;
+    color: rgb(243, 231, 231);
+    padding:20px;
+    align-items: center;
+}
+
+.active{
+    color:rgb(238, 17, 17);
+    font-size:20px;
+}
