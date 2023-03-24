@@ -40,6 +40,14 @@ export class ReactiveFormComponent implements OnInit {
     (<FormArray>this.rajreactiveform.get('hobbies')).reset()
    }
   }
+  limitadd(){
+    if(this.hobbyControls.length>3){
+      return true
+    }
+    else{
+      return false
+    }
+  }
   onSubmit(){
     console.log(this.rajreactiveform  )
   }

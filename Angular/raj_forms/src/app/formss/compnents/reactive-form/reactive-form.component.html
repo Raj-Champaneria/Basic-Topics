@@ -67,11 +67,11 @@
 
                 <input type="hobbies" class="form-control" id="hobbies" placeholder="hobbies">
             </ng-container>
-            <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="addHobbies()"><i>+</i>Add Hobbies</button>
+            <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="addHobbies()" [disabled]="limitadd()"><i>+</i>Add Hobbies</button>
             <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="removeHobbies(id)"><i>+</i>Remove
                 Hobbies</button>
         </div>
 
-<button type="submit" class="btn btn-primary my-3" [disabled]="!rajreactiveform.valid">Submit</button>
+<button type="submit" class="btn btn-primary my-3" >Submit</button>
 </form>
 </div>
