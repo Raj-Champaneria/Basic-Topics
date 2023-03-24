@@ -13,8 +13,11 @@
             <label for="email">Email address {{rajreactiveform.get('email')?.errors?.['email']}}</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"
                 formControlName="email">
-            <span *ngIf="rajreactiveform.get('email')?.errors?.['required'] && rajreactiveform.get('email')?.touched ">required</span>
-            <span *ngIf="rajreactiveform.get('email')?.errors?.['pattern'] && rajreactiveform.get('email')?.touched">Please Enter Valid email address</span>
+            <span
+                *ngIf="rajreactiveform.get('email')?.errors?.['required'] && rajreactiveform.get('email')?.touched ">required</span>
+            <span
+                *ngIf="rajreactiveform.get('email')?.errors?.['pattern'] && rajreactiveform.get('email')?.touched">Please
+                Enter Valid email address</span>
         </div>
         <div class="form-group">
             <label for="password">Password</label>
@@ -22,7 +25,7 @@
             <span *ngIf="!rajreactiveform.get('password')?.valid && rajreactiveform.get('password')?.touched">Password
                 length should minimum 6 characters</span>
             <span *ngIf="!rajreactiveform.get('password')?.valid && rajreactiveform.get('password')?.touched">Password
-                    length should minimum 6 characters</span>
+                length should minimum 6 characters</span>
         </div>
         <div class="form-group">
             <label for="confirmPassword">Confirm Password</label>
@@ -54,18 +57,21 @@
             <option>Angular</option>
             <option>React</option>
             <option>Vue</option>
-        </select> 
-       
+        </select>
 
-         <div class="form-group" formArrayName="hobbies">
+
+        <div class="form-group" formArrayName="hobbies">
             <label for="hobbies">hobbies</label>
-            
-            <!-- <ng-container *ngFor="let hobby of rajreactiveform.get('hobbies')">
+
+            <ng-container *ngFor="let hobby of hobbyControls">
 
                 <input type="hobbies" class="form-control" id="hobbies" placeholder="hobbies">
-            </ng-container>-->
-            <button class="btn btn-light btn btn-sm mt-3 btn-add"><i>+</i>Add Hobbies</button>
-        </div> 
-        <button type="submit" class="btn btn-primary my-3" [disabled]="!rajreactiveform.valid">Submit</button>
-    </form>
+            </ng-container>
+            <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="addHobbies()"><i>+</i>Add Hobbies</button>
+            <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="removeHobbies(id)"><i>+</i>Remove
+                Hobbies</button>
+        </div>
+
+<button type="submit" class="btn btn-primary my-3" [disabled]="!rajreactiveform.valid">Submit</button>
+</form>
 </div>

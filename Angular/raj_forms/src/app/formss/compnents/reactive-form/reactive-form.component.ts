@@ -25,7 +25,21 @@ export class ReactiveFormComponent implements OnInit {
       'hobbies':new FormArray ([new FormControl(null)])
     })
   }
-
+  public id:any
+  get hobbyControls(){
+    return (<FormArray>this.rajreactiveform.get('hobbies')).controls
+  }
+  addHobbies(){
+    (<FormArray>this.rajreactiveform.get('hobbies')).push(new FormControl(null,Validators.required))
+  }
+  removeHobbies(id:number){
+   if(this.hobbyControls.length>1){
+    (<FormArray>this.rajreactiveform.get('hobbies')).removeAt(id)
+   }
+   else{
+    (<FormArray>this.rajreactiveform.get('hobbies')).reset()
+   }
+  }
   onSubmit(){
     console.log(this.rajreactiveform  )
   }

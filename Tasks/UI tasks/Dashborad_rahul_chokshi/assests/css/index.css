@@ -246,7 +246,7 @@ table td {
     outline: none;
 }
 
-.footer input:focus {
+.footer input:focus {   
     border: 0;
 }
 

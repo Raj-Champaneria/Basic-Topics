@@ -4,13 +4,14 @@
 </div>
 <div class="table-div d-flex justify-content-center my-5">
 
-    <table class="table table-dark w-75 ">
+    <table class="table table-dark w-75 rounded-0">
 
         <thead>
           <tr *ngFor="let header of tablehead">
             <th scope="col">{{header.id}}</th>
             <th scope="col">{{header.name}}</th>
             <th scope="col">{{header.field}}</th>
+            <th scope="col">{{header.email}}</th>
             <th scope="col">{{header.address}}</th>
             <th scope="col">{{header.contact}}</th>
             <th scope="col">{{header.action}}</th>
@@ -21,9 +22,10 @@
             <td>{{employee.id}}</td>
             <td>{{employee.name}}</td>
             <td>{{employee.field}}</td>
+            <td >{{employee.email}}</td>
             <td>{{employee.address}}</td>
             <td>{{employee.contact_no}}</td>
-            <td><button class="btn btn-danger">Remove</button></td>
+            <td><button class="btn btn-danger btn-sm" (click)="removeemployee(employee.id)">Remove</button></td>
           </tr>
           
         </tbody>
