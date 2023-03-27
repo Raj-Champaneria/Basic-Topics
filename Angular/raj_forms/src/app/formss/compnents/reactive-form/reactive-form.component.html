@@ -63,15 +63,15 @@
         <div class="form-group" formArrayName="hobbies">
             <label for="hobbies">hobbies</label>
 
-            <ng-container *ngFor="let hobby of hobbyControls">
-
-                <input type="hobbies" class="form-control" id="hobbies" placeholder="hobbies">
+            <ng-container *ngFor="let hobby of hobbyControls;index as i">
+                <input type="hobbies" class="form-control" id="hobbies" placeholder="hobbies" formControlName="{{i}}">
             </ng-container>
-            <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="addHobbies()" [disabled]="limitadd()"><i>+</i>Add Hobbies</button>
+            <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="addHobbies()"
+                [disabled]="limitadd()"><i>+</i>Add Hobbies</button>
             <button class="btn btn-light btn btn-sm mt-3 btn-add" (click)="removeHobbies(id)"><i>+</i>Remove
                 Hobbies</button>
         </div>
 
-<button type="submit" class="btn btn-primary my-3" >Submit</button>
-</form>
+        <button type="submit" class="btn btn-primary my-3" [disabled]="!rajreactiveform.valid">Submit</button>
+    </form>
 </div>

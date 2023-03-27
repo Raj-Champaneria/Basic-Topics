@@ -1,0 +1,30 @@
+<p>emplist works!</p>
+<table class="w-100">
+    <thead>
+        <tr class="text-center">
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SALARY</th>
+            <th>TECHNOLOGY</th>
+            <th>EMAIL</th>
+            <th>CONTACT</th>
+            <th>PASSWORD</th>
+            <th>CONFIRM PASSWORD</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let emp of tablearr" class="text-center">
+            <td>{{emp.id}}</td>
+            <td> {{emp.name}}</td>
+            <td> {{emp.salary}}</td>
+            <td>{{emp.technology}}</td>
+            <td> {{emp.email}}</td>
+            <td> {{emp.contact_no}}</td>
+            <td>{{emp.password}}</td>
+            <td>{{emp.confirm_password}}</td>
+            <td><button class="btn btn-danger" (click)="deleteEmp(emp.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+.headers{
+    background-color: beige;
+    padding:20px;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    color:brown;
+}
