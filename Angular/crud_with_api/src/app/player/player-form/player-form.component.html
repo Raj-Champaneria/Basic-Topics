@@ -1,0 +1,29 @@
+<div class="form  d-flex justify-content-center " >
+    <form [formGroup]="playerform" class="w-50 mt-5 " (ngSubmit)="postdata()">
+      <h2>Player Registration Form</h2>
+        <div class="form-group">
+          <label for="name">Enter Name</label>
+          <input type="text" class="form-control" id="name"  placeholder="Enter Name" formControlName="name">
+         
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="text" class="form-control" id="age" placeholder="Enter Age" formControlName="age">
+        </div>
+        <div class="form-group">
+            <label for="address">address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Adrress" formControlName="address">
+          </div>
+       
+          <div class="form-group">
+            <label for="select">select sports</label>
+            <select class="form-select" formControlName="sports">
+                <option >Open this select menu</option>
+                <option value="cricket">cricket</option>
+                <option value="tennis">tennis</option>
+                <option value="baseball">tennis</option>
+              </select>
+          </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+      </form>
+</div>

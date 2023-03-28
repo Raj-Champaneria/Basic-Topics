@@ -1,0 +1,27 @@
+<h2>Player Table</h2>
+<table class="  ">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>address</th>
+            <th>sports</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of player">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.sports}}</td>
+            <td>
+                <!-- <button class="mx-2 btn btn-primary" (click)="updateplayer(item.id)">Edit</button> -->
+                <button class="mx-2 btn btn-primary" >Edit</button>
+                <button  class="mx-2 btn btn-danger" (click)="deleteplayer(item.id)">Delete</button>
+            </td>    
+        </tr>
+    </tbody>
+</table>

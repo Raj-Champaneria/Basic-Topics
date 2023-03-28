@@ -1,0 +1,7 @@
+table{
+    width:100%;
+
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(224, 235, 231);
+}

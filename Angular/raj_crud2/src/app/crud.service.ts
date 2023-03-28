@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 export class CrudService {
 
   public tablearr = [
-    { id: 1, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact_no: 9429329596, password: "raj", confirm_password: "raj" },
-    { id: 2, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact_no: 9429329596, password: "raj", confirm_password: "raj" },
-    { id: 3, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact_no: 9429329596, password: "raj", confirm_password: "raj" },
-    { id: 4, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact_no: 9429329596, password: "raj", confirm_password: "raj" },
-    { id: 5, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact_no: 9429329596, password: "raj", confirm_password: "raj" },
+    { id: 1, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact: 9429329596, password: "raj", confirm_password: "raj" },
+    { id: 2, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact: 9429329596, password: "raj", confirm_password: "raj" },
+    { id: 3, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact: 9429329596, password: "raj", confirm_password: "raj" },
+    { id: 4, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact: 9429329596, password: "raj", confirm_password: "raj" },
+    { id: 5, name: "raj champaneria", salary: 7000, technology: "JS", email: "raj@gmail.com", contact: 9429329596, password: "raj", confirm_password: "raj" },
   ]
   public returndata: any
   public tempdata: any;
