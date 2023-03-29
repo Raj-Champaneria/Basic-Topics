@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "product": [
+    {
+      "name": "Lg QLed",
+      "descripion": "A smart Tv",
+      "manufacturer_year": "2022",
+      "category": "Headphones",
+      "id": 1
+    },
+    {
+      "name": "Boat 311v2",
+      "descripion": "A good product",
+      "manufacturer_year": "2020",
+      "category": "Headphones",
+      "id": 2
+    },
+    {
+      "name": "Lg QLed",
+      "descripion": "sadf",
+      "manufacturer_year": "2020",
+      "category": "Televison",
+      "id": 3
+    },
+    {
+      "name": "Apple 14 pro max",
+      "descripion": "sadf",
+      "manufacturer_year": "2019",
+      "category": "Mobile",
+      "id": 4
+    }
+  ]
+}

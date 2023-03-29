@@ -1,0 +1,24 @@
+<table class="w-50 m-auto mt-5   border border-dark">
+    <thead>
+        <tr class=" border border-dark">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Manufacture Year</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of product">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.descripion}}</td>
+            <td>{{item.manufacturer_year}}</td>
+            <td>{{item.category}}</td>
+            <td><button class="btn btn-danger" (click)="removeProduct(item.id)">Remove</button></td>
+            <td><button class="btn btn-dark" (click)="edit(item.id)">Edit</button></td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-primary" (click)="navigateproduct()">Add Product</button> 

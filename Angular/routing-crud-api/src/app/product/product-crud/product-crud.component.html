@@ -1,0 +1,34 @@
+<div class="form d-flex justify-content-center">
+    <form class="w-50 mt-5" [formGroup]="productreactiveform" (ngSubmit)="changeButton?addUser():editProduct()">
+        <div class="mb-3">
+            <label for="pname" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="pname" formControlName="name">
+        </div>
+        <div class="mb-3">
+            <label for="pdescription" class="form-label">Product Description</label>
+            <input type="text" class="form-control" id="pdescription" formControlName="descripion">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Manufacture year</label>
+            <select class="form-select" aria-label="Default select example" formControlName="manufacturer_year">
+                <option value="2017" selected>2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="Manufacture_Year" class="form-label">Product Category</label>
+            <select class="form-select" aria-label="Default select example" formControlName="category">
+                <option value="Televison" selected>Televison</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Headphones">Headphones</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!productreactiveform.valid">{{changebtn}}</button>
+    </form>
+
+</div>
