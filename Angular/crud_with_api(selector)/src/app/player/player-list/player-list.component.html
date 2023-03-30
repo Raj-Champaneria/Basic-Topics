@@ -1,5 +1,5 @@
 <h2>Player Table</h2>
-<table class="  ">
+<table>
     <thead>
         <tr>
             <th>Id</th>
@@ -19,7 +19,9 @@
             <td>{{item.sports}}</td>
             <td>
                 <!-- <button class="mx-2 btn btn-primary" (click)="updateplayer(item.id)">Edit</button> -->
-                <button class="mx-2 btn btn-primary" >Edit</button>
+                <button class="mx-2 btn btn-primary" (click)="editPlayer.emit({
+                    id:item.id,name:item.name,age:item.age,address:item.address,sports:item.sports
+                })">Edit</button>
                 <button  class="mx-2 btn btn-danger" (click)="deleteplayer(item.id)">Delete</button>
             </td>    
         </tr>

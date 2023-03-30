@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { PlayerCrudService } from 'src/app/player-crud.service';
 
 @Component({
@@ -10,6 +10,7 @@ export class PlayerListComponent implements OnInit {
 
   constructor(private service:PlayerCrudService) { }
   player:any
+  @Output()editPlayer=new EventEmitter
   ngOnInit(): void {
     this.service.getData().subscribe((res:any)=>this.player=res)
   }
@@ -17,8 +18,5 @@ export class PlayerListComponent implements OnInit {
     this.service.deleteplayer(id).subscribe(item=>item)
     this.service.getData().subscribe((res:any)=>this.player=res)
   }
-  // updateplayer(id:any){
-  //   this.service.getdatabyid(id).subscribe((res)=>
-  //   this.updatedata=res)
-  // }
+ 
 }

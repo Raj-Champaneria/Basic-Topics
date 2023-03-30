@@ -5,16 +5,18 @@
             <input type="first-name" class="form-control" id="first-name" aria-describedby="emailHelp"
                 placeholder="Enter First Name" formControlName="firstname">
             <span class="text-danger"
-                *ngIf="!rajreactiveform.get('firstname')?.valid && rajreactiveform.get('firstname')?.touched  ">pease
-                enter valid name</span>
+            *ngIf="rajreactiveform.get('firstname')?.errors?.['required'] && rajreactiveform.get('firstname')?.touched">required
+            </span>
+            <span
+                *ngIf="rajreactiveform.get('firstname')?.errors?.['pattern'] && rajreactiveform.get('firstname')?.touched">Please Enter First Letter in capital
+            </span>
         </div>
         <div class="form-group ">
-
             <label for="email">Email address {{rajreactiveform.get('email')?.errors?.['email']}}</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"
                 formControlName="email">
             <span
-                *ngIf="rajreactiveform.get('email')?.errors?.['required'] && rajreactiveform.get('email')?.touched ">required</span>
+                *ngIf="rajreactiveform.get('email')?.errors?.['required'] && rajreactiveform.get('email')?.touched">required</span>
             <span
                 *ngIf="rajreactiveform.get('email')?.errors?.['pattern'] && rajreactiveform.get('email')?.touched">Please
                 Enter Valid email address</span>
@@ -22,17 +24,19 @@
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
-            <span *ngIf="!rajreactiveform.get('password')?.valid && rajreactiveform.get('password')?.touched">Password
-                length should minimum 6 characters</span>
-            <span *ngIf="!rajreactiveform.get('password')?.valid && rajreactiveform.get('password')?.touched">Password
-                length should minimum 6 characters</span>
+            <span
+                *ngIf="rajreactiveform.get('password')?.errors?.['required'] && rajreactiveform.get('password')?.touched ">required
+            </span>
+            <span
+                *ngIf="rajreactiveform.get('password')?.errors?.['pattern'] && rajreactiveform.get('password')?.touched ">password atleast 6 characters
+            </span>
         </div>
+
         <div class="form-group">
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" class="form-control" id="confirmPassword" placeholder="confirmPassword"
                 formControlName="confirmPassword">
             <span *ngIf="!rajreactiveform.get('confirmPassword')?.valid"></span>
-
         </div>
 
 
