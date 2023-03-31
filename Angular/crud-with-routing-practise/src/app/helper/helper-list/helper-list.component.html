@@ -1,0 +1,34 @@
+<table class="w-75 m-auto table ">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">NAME</th>
+            <th scope="col">AGE</th>
+            <th scope="col">EXPERIENCE</th>
+            <th scope="col">AVAILIBLITY</th>
+            <th scope="col">LICENSE</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">PASSWORD</th>
+            <th scope="col">CONFIRM PASSWORD</th>
+            <th scope="col">ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let helpers of helper">
+
+            <td>{{helpers.id}}</td>
+            <td>{{helpers.name}}</td>
+            <td>{{helpers.age}}</td>
+            <td>{{helpers.experience}}</td>
+            <td *ngIf="helpers.availiblity==1">yes</td>
+            <td *ngIf="helpers.availiblity==0">No</td>
+            <td>{{helpers.licencse}}</td>
+            <td>{{helpers.email}}</td>
+            <td>{{helpers.password}}</td>
+            <td>{{helpers.confirmpassword}}</td>
+            <td><button (click)="deleteHelper(helpers.id)">Delete</button></td>
+            <td><button (click)="EditHelper(helpers.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
