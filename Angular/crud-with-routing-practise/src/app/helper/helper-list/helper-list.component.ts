@@ -1,5 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HelperService } from 'src/app/helper.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { HelperService } from 'src/app/helper.service';
 })
 export class HelperListComponent implements OnInit {
   public helper:any
-  constructor(private service:HelperService,private http:HttpClient) { }
+  constructor(private service:HelperService,private http:HttpClient,private router:Router) { }
 
   ngOnInit(){
     this.service.getHelper().subscribe((res)=>this.helper=res)
@@ -18,7 +19,10 @@ export class HelperListComponent implements OnInit {
     this.service.delete(id).subscribe(data=>data)
     this.service.getHelper().subscribe(res=>this.service.getHelper().subscribe((res)=>this.helper=res))
   }
-  EditHelper(id:any){
-
+  GetHelperid(id:any){
+    this.router.navigate(['/form',id])
+  }
+  navigateToForm(){
+    this.router.navigate(['/form'," "])
   }
 }

@@ -17,4 +17,10 @@ export class HelperService {
   delete(id:any){
     return this.http.delete(`${this.url}/${id}`)
   }
+  getHelperbyId(id:any){
+    return this.http.get(`${this.url}/${id}`)
+  }
+  putData(id:any,data:any){
+    return this.http.put(this.url+"/"+id,data)
+  }
 }

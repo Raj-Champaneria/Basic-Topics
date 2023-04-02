@@ -6,7 +6,7 @@ import { HelperListComponent } from './helper-list/helper-list.component';
 const routes: Routes = [
   {path:"",redirectTo:"list",pathMatch:"full"},
   {path:"list",component:HelperListComponent},
-  {path:"form",component:HelperFormComponent}
+  {path:"form/:id",component:HelperFormComponent}
 ];
 
 @NgModule({

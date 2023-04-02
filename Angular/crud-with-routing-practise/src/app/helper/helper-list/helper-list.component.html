@@ -22,13 +22,14 @@
             <td>{{helpers.experience}}</td>
             <td *ngIf="helpers.availiblity==1">yes</td>
             <td *ngIf="helpers.availiblity==0">No</td>
-            <td>{{helpers.licencse}}</td>
+            <td>{{helpers.license}}</td>
             <td>{{helpers.email}}</td>
             <td>{{helpers.password}}</td>
             <td>{{helpers.confirmpassword}}</td>
-            <td><button (click)="deleteHelper(helpers.id)">Delete</button></td>
-            <td><button (click)="EditHelper(helpers.id)">Delete</button></td>
+            <td><button class="btn btn-danger" (click)="deleteHelper(helpers.id)">Delete</button></td>
+            <td><button class="btn btn-warning" (click)="GetHelperid(helpers.id)">Edit</button></td>
         </tr>
     </tbody>
 </table>
 
+<button  class="btn btn-primary" (click)="navigateToForm()">Add Helper</button>
