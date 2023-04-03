@@ -39,11 +39,11 @@ export class HelperFormComponent implements OnInit {
           age: this.editHelper.age,
           experience: this.editHelper.experience,
           availiblity: this.editHelper.availiblity,
-          license:new FormArray([],[Validators.required]),
           email: this.editHelper.email,
           password: this.editHelper.password,
           confirmpassword: this.editHelper.confirmpassword,
-          acceptform:new FormControl(false,Validators.requiredTrue),
+          license:this.editHelper.license,
+          acceptform:this.editHelper.acceptform,
         })
       })
       this.changebtn="update"

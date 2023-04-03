@@ -18,28 +18,6 @@
   },
   "helper": [
     {
-      "name": "Raj111",
-      "age": "23222",
-      "experience": "3",
-      "availiblity": "1",
-      "licencse": false,
-      "email": "kbas",
-      "password": "jsb",
-      "confirmpassword": "jbsb",
-      "id": 8
-    },
-    {
-      "name": "Nisha",
-      "age": "41",
-      "experience": "5",
-      "availiblity": "1",
-      "licencse": true,
-      "email": "nisha@gmail.com",
-      "password": "Nisha",
-      "confirmpassword": "Nisha",
-      "id": 9
-    },
-    {
       "name": "ss",
       "age": "23",
       "experience": "2",
@@ -49,8 +27,7 @@
       "confirmpassword": "ss",
       "acceptform": true,
       "license": [
-        "LMV",
-        "MCWG"
+        "LMV"
       ],
       "id": 10
     },
@@ -74,30 +51,15 @@
       "age": "nn",
       "experience": "2",
       "availiblity": "1",
-      "email": "ss",
-      "password": "ssss",
-      "confirmpassword": "ss",
+      "email": "aa",
+      "password": "aa",
+      "confirmpassword": "aa",
       "acceptform": true,
       "license": [
         "LMV",
-        "MCWG"
+        "HLV"
       ],
       "id": 12
-    },
-    {
-      "name": "xx",
-      "age": "xx",
-      "experience": "2",
-      "availiblity": "1",
-      "email": "Nishannnn",
-      "password": "dd",
-      "confirmpassword": "ddd",
-      "acceptform": true,
-      "license": [
-        "LMV",
-        "MCWG"
-      ],
-      "id": 13
     },
     {
       "name": "nn",
@@ -112,6 +74,37 @@
         "LMV"
       ],
       "id": 14
+    },
+    {
+      "name": "Nupur",
+      "age": "22",
+      "experience": "2",
+      "availiblity": "1",
+      "email": "NupurPandya@gmail.com",
+      "password": "Nupur",
+      "confirmpassword": "Nupur",
+      "acceptform": true,
+      "license": [
+        "HLV",
+        "SUV",
+        "MCWG",
+        "LMV"
+      ],
+      "id": 15
+    },
+    {
+      "name": "KarAN",
+      "age": "33",
+      "experience": "2",
+      "availiblity": "0",
+      "email": "KKK",
+      "password": "FFGHD",
+      "confirmpassword": "GDFHG",
+      "acceptform": true,
+      "license": [
+        "MCWG"
+      ],
+      "id": 17
     }
   ]
 }
