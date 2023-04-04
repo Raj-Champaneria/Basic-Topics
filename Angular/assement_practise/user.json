@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "name": "asfaf1122222",
+      "age": "266",
+      "email": "sdf",
+      "id": 5
+    },
+    {
+      "name": "Maahi",
+      "age": "5252",
+      "email": "Mahi@qyue.com",
+      "id": 6
+    }
+  ]
+}

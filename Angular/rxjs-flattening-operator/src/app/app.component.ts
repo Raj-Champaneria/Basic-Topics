@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     //with only map observable
+    
     this.array.pipe
     (map(res => this.getData(res)))
     .subscribe(data => data.subscribe(res2=>{this.service.printData('map',res2)}))

@@ -1,0 +1,4 @@
+<button class="btn btn-primary" (click)="toggle=!toggle">Add Users</button>
+<app-user-list (myevent)="getUserData($event)" [ngClass]=" toggle ? 'opacity1':'opacity05'" ></app-user-list>
+<app-user-form [id]="id" [name]="name" [age]="age" [email]="email"  [ngClass]=" toggle ? 'hide':'show'"></app-user-form>
+

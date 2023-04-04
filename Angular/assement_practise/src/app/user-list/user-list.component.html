@@ -1,0 +1,32 @@
+<h1>user-list</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">NAME<button>v</button></th>
+        <th scope="col">AGE<button (click)="sortByAge()">v</button></th>
+        <th scope="col">EMAIL</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let users of data">
+        <th scope="row">{{users.id}}</th>
+        <td>{{users.name}}</td>
+        <td>{{users.age}}</td>
+        <td>{{users.email}}</td>
+        <td><button class="btn btn-danger" (click)="delete(users.id)">Delete</button></td>
+        <td><button class="btn btn-danger" 
+          (click)="myevent.emit
+          ({
+            id:users.id,
+            name:users.name,
+            age:users.age,
+            email:users.email,
+            toggle:false
+          })" >Edit</button></td>
+      </tr>
+    
+    </tbody>
+  </table>
