@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "helper": [
+    {
+      "name": "Maahi",
+      "age": "23",
+      "field": "ELECTRICAL",
+      "email": "Bhupendra@gmail.commm",
+      "id": 8
+    },
+    {
+      "name": "saf",
+      "age": "21",
+      "field": "ELECTRICAL",
+      "email": "ghhg11112222211",
+      "id": 11
+    }
+  ]
+}

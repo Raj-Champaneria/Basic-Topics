@@ -18,11 +18,11 @@
   },
   "Students": [
     {
-      "id": 1,
-      "name": "Raj Champaneria",
-      "field": "IT",
-      "gender": "male",
-      "email": "rajchampaneria5@gmail.com"
+      "id":1,
+      "name":"Raj Champaneria",
+      "field":"IT",
+      "gender":"male",
+      "email":"Rajchampaneria5@gmail.com"
     }
   ]
 }

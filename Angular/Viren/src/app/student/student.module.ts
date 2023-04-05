@@ -18,7 +18,4 @@ import { StudentComponent } from './student.component';
     StudentRoutingModule
   ]
 })
-export class StudentModule {
-
- 
- }
+export class StudentModule { }

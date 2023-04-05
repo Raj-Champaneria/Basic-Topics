@@ -1,24 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { StudentRoutingModule } from './student-routing.module';
+import { HelperRoutingModule } from './helper-routing.module';
 import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
-import { StudentComponent } from './student.component';
+import { HelperComponent } from './helper.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     ListComponent,
     FormComponent,
-    StudentComponent
+    HelperComponent
   ],
   imports: [
     CommonModule,
-    StudentRoutingModule
+    HelperRoutingModule,
+    ReactiveFormsModule
   ]
 })
-export class StudentModule {
-
- 
- }
+export class HelperModule { }

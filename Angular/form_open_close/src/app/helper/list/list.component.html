@@ -1,0 +1,25 @@
+<button class="btn btn-primary" (click)="callingform()">+Add Helper</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">NAME</th>
+        <th scope="col">AGE</th>
+        <th scope="col">FIELD</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of helperlistiterate">
+        <th scope="row">{{data.id}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.age}}</td>
+        <td>{{data.field}}</td>
+        <td>{{data.email}}</td>
+        <td><button (click)="DeleteUser(data.id)">Delete</button></td>
+        <td><button (click)="EditUser(data.id)" (click)="toggleformOnEdit(data.id)">Edit</button></td>
+      </tr>
+     
+    </tbody>
+  </table>
