@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">NAME</th>
+        <th scope="col">FIELD</th>
+        <th scope="col">GENDER</th>
+        <th scope="col">EMAIL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- iterate the data in studentList  -->
+      <tr *ngFor="let data of studentList">
+        <th scope="row">{{data.id}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.field}}</td>
+        <td>{{data.gender}}</td>
+        <td>{{data.email}}</td>
+        <td><button>Edit</button></td>
+        <td><button (click)="deleteStudent(data.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-primary">Add Students</button>
