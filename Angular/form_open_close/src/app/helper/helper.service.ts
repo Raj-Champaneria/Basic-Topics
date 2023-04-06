@@ -14,7 +14,7 @@ export class HelperService {
   get(){
     return this.http.get(this.url)
   }
-
+  
   //to post the Data
   post(data:any){
    return this.http.post(this.url,data)

@@ -1,0 +1,21 @@
+<button class="btn btn-primary m-2" (click)="ispressed()">+Add user</button>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">FNAME</th>
+        <th scope="col">LNAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of emplistiterate">
+        <td scope="row">{{data.id}}</td>
+        <td>{{data.fname}}</td>
+        <td>{{data.lname}}</td>
+        <td><button (click)="DeleteEmployee(data.id)">Delete</button></td>
+        <td><button (click)="EditEmployee(data.id)" (click)="clickOnEdit(data.id)">Edit</button></td>
+      </tr>
+    
+    </tbody>
+  </table>

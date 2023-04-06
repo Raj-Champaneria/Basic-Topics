@@ -1,0 +1,2 @@
+<app-form *ngIf="ispressed" (closeformevent)="closeform($event)" (postDataEvent)="postEmployeData($event)" [editeddata]="editeddata" (updateevent)="UpdateEmployeData($event)"></app-form>   
+<app-list (openFormevent)="openform($event)" [emplistiterate]="employelist" (deleteevent)="deleteEmployeData($event)" (editevent)="editData($event)"></app-list>

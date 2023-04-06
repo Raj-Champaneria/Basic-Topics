@@ -1,0 +1,13 @@
+<form [formGroup]="employeform"(ngSubmit)="toggleFunc?postEmployeeData():updateEmployeeData()">
+    <div class="mb-3">
+      <label for="fname" class="form-label">Enter fname</label>
+      <input type="text" class="form-control" id="fname" formControlName="fname"> 
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="lname" class="form-label" >Lname</label>
+      <input type="text" class="form-control" id="lname" formControlName="lname">
+    </div>
+    <button type="submit" class="btn btn-primary">{{togglebtn}}</button>
+    <button class="btn btn-danger mx-2" (click)="closeform()">cancel</button>
+</form>
