@@ -11,6 +11,7 @@ export class ListComponent implements OnInit {
   @Output() deleteevent=new EventEmitter
   @Output() editevent = new EventEmitter
   public ispressedbtn:boolean=true
+ public searchstring:any=""
   @Input() emplistiterate: any;
 
   constructor(private service:EmployeeService) { }
