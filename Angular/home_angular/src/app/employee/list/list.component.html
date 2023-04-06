@@ -1,3 +1,5 @@
+
+
 <button class="btn btn-primary m-2" (click)="ispressed()">+Add user</button>
 
 <input type="text" name="" id="" placeholder="search Here" [(ngModel)]="searchstring">
@@ -12,7 +14,7 @@
     <tbody>
       <tr *ngFor="let data of emplistiterate | searchpipe:searchstring">
         <td scope="row">{{data.id}}</td>
-        <td>{{data.fname}}</td>
+        <td >{{data.fname}}</td>
         <td>{{data.lname}}</td>
         <td><button (click)="DeleteEmployee(data.id)">Delete</button></td>
         <td><button (click)="EditEmployee(data.id)" (click)="clickOnEdit(data.id)">Edit</button></td>

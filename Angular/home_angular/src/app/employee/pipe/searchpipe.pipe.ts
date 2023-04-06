@@ -10,7 +10,7 @@ export class SearchpipePipe implements PipeTransform {
     {
       return value;
     }
-    const array=value.filter((item: any)=>item.fname.toLowerCase().includes(searchstring)  );
+    const array=value.filter((item: any)=>item.fname.toLowerCase().includes(searchstring)    );
     return array
   }
 

@@ -1,4 +1,4 @@
-<form [formGroup]="employeform"(ngSubmit)="toggleFunc?postEmployeeData():updateEmployeeData()">
+<form  (ngSubmit)="toggleFunc?postEmployeeData():updateEmployeeData()">
     <div class="mb-3">
       <label for="fname" class="form-label">Enter fname</label>
       <input type="text" class="form-control" id="fname" formControlName="fname"> 

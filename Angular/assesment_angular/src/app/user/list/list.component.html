@@ -1,0 +1,49 @@
+<header class="d-flex justify-content-between m-1 align-items-center">
+    <div class="status">
+       <div class="status-dropdown">
+        <select class="form-select" aria-label="Default select example ">
+            <option selected  >Status</option>
+            <option value="Open" >Open</option>
+            <option value="Error" >Error</option>
+            <option value="Inactive">Inactive</option>
+            <option value="Success">Success</option>
+          </select>
+       </div>
+    </div>
+    <div class="search d-flex  ">
+        <input type="text"  class="form-control-plaintext border input-search mx-2" [(ngModel)]="searchstring" placeholder="Search Here..." >
+        <button class="btn btn-primary mx-2" (click)="formOpen()">Add</button>
+    </div>
+
+</header>
+
+
+<table class="table my-5">
+    <thead>
+        <tr class="h5">
+            <th scope="col">#</th>
+            <th scope="col">NAME</th>
+            <th scope="col">DESCRIPTION</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">RATE</th>
+            <th scope="col">BALANCE</th>
+            <th scope="col">ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of userDataIterate  | search:searchstring" >
+            <td>{{data.id}}</td>
+            <td class="text-dark">{{data.name}}</td>
+            <td class="description">{{data.description}}</td>
+            <td>{{data.status}}</td>
+            <td>{{data.rate}}</td>
+            <td >{{data.balance}}</td>
+            <td>
+            <i class="fa-solid fa-pen mx-3 editcolor " (click)="editUser(data.id)"></i>
+            <i class="fa-solid fa-trash-can text-danger" (click)="deleteUser(data.id)"></i>
+            </td>
+
+        </tr>
+
+    </tbody>
+</table>

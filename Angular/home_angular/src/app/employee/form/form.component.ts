@@ -16,7 +16,8 @@ export class FormComponent implements OnInit,OnChanges {
   public toggleFunc:any
   constructor() { }
   public employeform!:FormGroup
- 
+
+  
   closeform(){
     this.closeformevent.emit(this.ispressed)
   }

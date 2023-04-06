@@ -1,0 +1,48 @@
+tbody tr:nth-child(even){
+    background-color:#EBF0FA;
+}
+thead{
+    background-color:#EBF0FA;
+   
+}
+.editcolor{
+    color: #868FA0;
+}
+thead th{
+    padding:15px;
+}
+.search{
+    border-radius:5px;
+    border:1 px solid  #EBF0FA;
+    outline: none;
+}
+td{
+    padding:15px;
+    font-size:16px;
+}
+tr:hover{
+    background-color: #e0e1e4;
+    cursor:pointer
+}
+th{
+    color: #464F60;
+    font-size:16px;
+}
+.name-field{
+    color:#171C26
+}
+.description{
+    color: #464F60;
+    font-weight:400;
+    min-width:150px;
+}
+.input-search{
+    border-radius: 5px;
+}
+
+td{
+    font-size:15px;
+}
+::-webkit-input-placeholder {
+   padding-left: 10px;
+ }

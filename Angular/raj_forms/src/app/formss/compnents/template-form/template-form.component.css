@@ -4,3 +4,7 @@ input.ng-invalid.ng-touched{
 span{
     color:red;
 }
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }

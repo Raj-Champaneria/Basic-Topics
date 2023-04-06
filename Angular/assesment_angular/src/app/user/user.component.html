@@ -1,0 +1,3 @@
+
+<app-form  *ngIf="toggle" (closeformevent)="closeform($event)" (postevent)="postUser($event)" [editedData]="editedData" (updateevent)="updateUser($event)"></app-form>
+<app-list (formopenevent)="openform($event)" [userDataIterate]="userData" (deleteevent)="deleteUser($event) "(editevent)="editUser($event)"></app-list>
