@@ -1,0 +1,61 @@
+<header class="d-flex justify-content-between m-1 align-items-center">
+    <div class="status">
+       <div class="status-dropdown">
+        <!-- <select class="form-select" aria-label="Default select example ">
+            <option selected  >Status</option>
+            <option value="Open" >Open</option>
+            <option value="Error" >Error</option>
+            <option value="Inactive">Inactive</option>
+            <option value="Success">Success</option>
+          </select> -->
+
+          <ng-select [(ngModel)]="filterval" [clearable]="false">
+            <ng-option *ngFor="let car of dropdown  " [value]="car.name"  >{{car.name}}</ng-option>
+         </ng-select>
+       </div>
+    </div>
+    <div class="search d-flex  ">
+        <input type="text"  class="form-control-plaintext border input-search mx-2" [(ngModel)]="searchstring" placeholder="Search Here..." >
+        <button class="btn btn-primary mx-2" (click)="formOpen()">Add</button>
+    </div>
+
+</header>
+
+<div class="table-div">
+    <table class="table my-5">
+        <thead>
+            <tr class="h5">
+                <th scope="col">#</th>
+                <th scope="col">NAME</th>
+                <th scope="col">DESCRIPTION</th>
+                <th scope="col">STATUS</th>
+                <th scope="col">RATE</th>
+                <th scope="col">BALANCE</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of userDataIterate  | search:searchstring | filter:filterval" >
+                <td>{{data.id}}</td>
+                <td class="text-dark">{{data.name}}</td>
+                <td class="description">{{data.description}}</td>
+                <td>
+                    <span class="Open" *ngIf="data.status=='Open'">{{data.status}}</span>
+                    <span class="Error" *ngIf="data.status=='Error'">{{data.status}}</span>
+                    <span class="Success" *ngIf="data.status=='Success'">{{data.status}}</span>
+                    <span class="Inactive" *ngIf="data.status=='Inactive'">{{data.status}}</span>
+                </td>
+                <td>{{data.rate}}</td>
+                <td>
+                    <span class="red" *ngIf="data.balance<0">-{{data.balance*(-1) | currency}}</span>
+                    <span class="green" *ngIf="data.balance>0">{{data.balance | currency}}</span>
+                </td>
+                <td>
+                <i class="fa-solid fa-pen mx-3 editcolor" (click)="editUser(data.id)"></i>
+                <i class="fa-solid fa-trash-can text-danger" (click)="deleteUser(data.id)"></i>
+                </td>
+            </tr>
+    
+        </tbody>
+    </table>
+</div>

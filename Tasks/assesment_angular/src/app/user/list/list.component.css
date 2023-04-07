@@ -1,0 +1,95 @@
+tbody tr:nth-child(even){
+    background-color:#EBF0FA;
+}
+thead{
+    background-color:#EBF0FA;
+   
+}
+.editcolor{
+    color: #868FA0;
+}
+thead th{
+    padding:15px;
+}
+.search{
+    border-radius:5px;
+    border:1 px solid  #EBF0FA;
+    outline: none;
+}
+td{
+    padding:15px;
+    font-size:16px;
+}
+tr:hover{
+    background-color: #e0e1e4;
+    cursor:pointer
+}
+th{
+    color: #464F60;
+    font-size:16px;
+}
+.name-field{
+    color:#171C26
+}
+.description{
+    color: #464F60;
+    font-weight:400;
+    max-width:100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.input-search{
+    border-radius: 5px;
+}
+
+td{
+    font-size:15px;
+}
+::-webkit-input-placeholder {
+   padding-left: 10px;
+ }
+ ng-select{
+    width:200px;
+ }
+
+ .Open{
+    color:blue;
+    padding:1px 10px;
+    border-radius: 10px;
+    background:#e0e1e4;
+ }
+
+ .Error{
+    color:rgb(244, 25, 9);
+    padding:1px 10px;
+    border-radius: 10px;
+    background:#e0e1e4;
+ }
+
+ .Success{
+    color:rgb(0, 255, 0);
+    padding:1px 10px;
+    border-radius: 10px;
+    background:#e0e1e4;
+ }
+
+ .Inactive{
+    color:rgb(190, 190, 190);
+    padding:1px 10px;
+    border-radius: 10px;
+    background:#e0e1e4;
+ }
+
+ .red{
+    color:red;
+ }
+
+ .green{
+    color:green;
+ }
+
+ .table-div{
+    height:100%;
+    overflow: auto;
+ }

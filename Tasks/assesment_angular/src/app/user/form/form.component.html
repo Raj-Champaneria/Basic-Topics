@@ -1,0 +1,70 @@
+
+<div class="form-heading ">
+    <h6 class="mt-2 mx-2">{{headerName}}</h6>
+</div>
+<form [formGroup]="reactiveform" class="d-flex flex-column justify-content-between   m-2" (ngSubmit)="togglebutton?postEmployeeData():UpdateEmployeeData()">
+    
+        <div class="upper-section">
+            <div class="mb-3">
+                <label for="name" class="form-label"> NAME</label>
+                <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter Name">
+                <span class="text-danger"
+                    *ngIf="reactiveform.get('name')?.errors?.['required'] && reactiveform.get('name')?.touched">required
+                </span>
+                <span class="text-danger"
+                    *ngIf="reactiveform.get('name')?.errors?.['pattern'] && reactiveform.get('name')?.touched">
+                    Length should be min 3 and max 25 characters
+                </span>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">DESCRIPTION</label>
+                <input type="text" class="form-control" id="description" formControlName="description" placeholder="Enter Description">
+                <span class="text-danger"
+                    *ngIf="reactiveform.get('description')?.errors?.['required'] && reactiveform.get('description')?.touched">required
+                </span>
+                <span class="text-danger"
+                    *ngIf="reactiveform.get('description')?.errors?.['pattern'] && reactiveform.get('description')?.touched">
+                    Length should be min 3 and max 25 characters
+                </span>
+            </div>
+            <div class="mb-3">
+                <label for="status" class="form-label">STATUS</label>
+                <!-- <select class="form-select" aria-label="Default select example" formControlName="status">
+                    <option value="Open">Open</option>
+                    <option value="Error">Error</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Success">Success</option>
+                </select> -->
+
+                <ng-select formControlName="status" [clearable]="false">
+                    <ng-option *ngFor="let car of dropdown" [value]="car.name">{{car.name}}</ng-option>
+                 </ng-select>
+            </div>
+            <div class="mb-3">
+                <label for="rate" class="form-label">RATE</label>
+                <input type="text" class="form-control" id="rate" formControlName="rate" placeholder="Enter Rate">
+                <span class="text-danger"
+                *ngIf="reactiveform.get('rate')?.errors?.['required'] && reactiveform.get('rate')?.touched">required
+            </span>
+            <span class="text-danger"
+                *ngIf="reactiveform.get('rate')?.errors?.['pattern'] && reactiveform.get('rate')?.touched">
+                Length should be min 3 and max 25 characters( Numbers Only)
+            </span>
+            </div>
+            <div class="mb-3">
+                <label for="balance" class="form-label">BALANCE</label>
+                <input type="text" class="form-control" id="balance" formControlName="balance" placeholder="Enter balance">
+                <span class="text-danger"
+                *ngIf="reactiveform.get('balance')?.errors?.['required'] && reactiveform.get('balance')?.touched">required
+            </span>
+            <span class="text-danger"
+                *ngIf="reactiveform.get('balance')?.errors?.['pattern'] && reactiveform.get('balance')?.touched">
+                Length should be min 3 and max 25 characters
+            </span>
+            </div>
+        </div>
+        <div class="button-section  d-flex justify-content-end ">
+            <button type="submit" class="btn btn-primary mt-2" [disabled]="!reactiveform.valid">{{changebutton}}</button>
+            <button class="btn btn-color mx-2 mt-2" (click)="closeform()">cancel</button>
+        </div> 
+</form>

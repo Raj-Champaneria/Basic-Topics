@@ -1,0 +1,26 @@
+app-form{
+    position: absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:385px;
+    z-index:1;
+    background-color: #E7E7E7;
+}
+
+.opacity1{
+    opacity:1;
+}
+
+.opacity05{
+    opacity:0.2;   
+}
+
+app-list{
+    height:100%;
+    width:100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
