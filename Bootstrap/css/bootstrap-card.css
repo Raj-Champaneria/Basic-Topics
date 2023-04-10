@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #000000;
+}
+
+.header h5 {
+    color: #7d7d7d;
+}
+
+.main-digit h4 {
+    font-size: 30px;
+    color: #5c6f6b
+}
+
+.main-digit span {
+    font-size: 20px;
+}
+
+.card-body h6 {
+    color: #a8a7a7;
+    font-weight: 400;
+}
+
+.contact-div {
+    background-color: #f29e7d;
+}
+
+.card-contact h3 {
+    font-weight: 800;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-technical img {
+    height: 30px;
+    width: 30px;
+}
+
+.card-technical {
+    gap: 35px;
+}
+
+.card-technical h5 {
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.purchase-card{
+    background-color: #476f66;
+}
+
+.share-btn,.footer{
+    background-color: #31574f;
+}
+
+.purchase{
+    background-color: #f6cfcf;
+    font-weight:600;
+}
+.recurring{
+    color:#5e867d;
+}
+.quote-header{
+    border-bottom:1px solid #678a83;
+    opacity: 0.8;
+}
+.card-quickbook img{
+    height:50px;
+    width:50px;
+}
