@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: #f5efef;
+}
+.card{
+    width:100%;
+    max-width:874px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+}
+.card-title{
+    color: #284B80;
+    font-family: 'Inter';
+}
+.card-text{
+    font-family: 'Inter';
+}
+.card-body-desc{
+    color: #8D98AA;
+    font-weight: 500;
+}
+
+.card-body-digit{
+    color: #284B80;
+    font-weight: 500;
+}
+.dialog-box{
+    background-color:#F7F9FF;
+}
+
