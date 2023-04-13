@@ -1,9 +1,4 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@200;300&family=Roboto:ital,wght@0,100;1,100&display=swap');
-// 
-
 .card{
     width: 100%;
     max-width:492px;
@@ -59,17 +54,15 @@ button{
 // =============digital Marketing
 $main-color:#EB5757;
 .digital-marketing{
-    margin-left:15px;
     background-color: $main-color;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    width: 300px;
 }
 .social-media{
     width: 500px;
     background-color: #fff;
     border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
     p{
         color:#90A4AE;
     }
@@ -98,5 +91,26 @@ $main-color:#EB5757;
 @media screen and (min-width:768px) {
     .card{
         max-width:900px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .digital-card-warpper{
+        text-align: center;
+        margin:auto;
+        width:50%;
+    }
+
+    .digital-marketing,.social-media{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 25px;
+    }
+
+    .social-media{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius:25px;
+    }
+    .progress{
+        width: 100px;;
     }
 }
