@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@200;300&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -10,9 +13,13 @@ body {
     width: 100%;
 }
 
+body{
+    // overflow: hidden;
+}
+
 //start:background-colors
 $dark: #111111;
-$primary: #0d6efd;
+$primary: #04f1b6;
 $dark-blue: #15181b;
 //end:background-color
 
@@ -35,14 +42,14 @@ $w-100: 100%;
 $w-75: 75%;
 $w-50: 50%;
 $w-25: 25%;
-
+$w-15:15%;
 
 $width-sizes: (
     'w-100':$w-100,
     'w-75':$w-75,
     'w-50':$w-50,
     'w-25':$w-25,
-
+    'w-15':$w-15
 );
 
 @each $key,
@@ -71,13 +78,60 @@ $value in $height-sizes {
         height: $value;
     }
 }
+
 //end:height-size
+
+//margin
+
+$m-1: 5px;
+$m-2: 10px;
+$m-3: 15px;
+$m-4: 20px;
+$m-5: 25px;
+
+$margin-class: (
+    'm-1':$m-1,
+    'm-2':$m-2,
+    'm-3':$m-3,
+    'm-4':$m-4,
+    'm-5':$m-5
+);
+
+@each $key,
+$value in $margin-class {
+    .#{$key} {
+        margin: $value;
+    }
+}
+
+//margin-top
+
+$mt-1: 5px;
+$mt-2: 10px;
+$mt-3: 15px;
+$mt-4: 20px;
+$mt-5: 25px;
+
+$margin-top-class: (
+    'mt-1':$mt-1,
+    'mt-2':$mt-2,
+    'mt-3':$mt-3,
+    'mt-4':$mt-4,
+    'mt-5':$mt-5
+);
+
+@each $key,
+$value in $margin-top-class {
+    .#{$key} {
+        margin-top: $value;
+    }
+}
 
 //display-flex
 
-$flex:flex;
-$block:block;
-$inline-block:inline-block;
+$flex: flex;
+$block: block;
+$inline-block: inline-block;
 
 $display: (
     'flex':$flex,
@@ -85,22 +139,24 @@ $display: (
     'inline-block':$inline-block
 );
 
-@each $key,$value in $display {
+@each $key,
+$value in $display {
     .d-#{$key} {
         display: $value;
     }
 }
 
 //flex-directions
-$flex-row:row;
-$flex-column:column;
+$flex-row: row;
+$flex-column: column;
 
 $flex-direction: (
     'row':$flex-row,
     'column':$flex-column
 );
 
-@each $key,$value in $flex-direction {
+@each $key,
+$value in $flex-direction {
     .flex-#{$key} {
         flex-direction: $value;
     }
@@ -108,17 +164,18 @@ $flex-direction: (
 
 
 //justify-content
-$space-between:space-between;
-$center:center;
-$space-around:space-around;
+$space-between: space-between;
+$center: center;
+$space-around: space-around;
 
-$justify-content:(
+$justify-content: (
     'space-between':$space-between,
     'center':$center,
     'space-around':$space-around
 );
 
-@each $key,$value in $justify-content {
+@each $key,
+$value in $justify-content {
     .justify-#{$key} {
         justify-content: $value;
     }
@@ -126,30 +183,34 @@ $justify-content:(
 
 //align items
 
-$center:center;
-
-$align-items:(
-    'center':$center
+$center: center;
+$start: start;
+$align-items: (
+    'center':$center,
+    'start':$start
 );
 
-@each $key,$value in $align-items{
+@each $key,
+$value in $align-items {
     .align-items-#{$key} {
-       align-items: $value;
+        align-items: $value;
     }
 }
 
 //start:text-colors
 $dark: #111111;
-$primary: #0d6efd;
+$primary: #05d7f7;
 $dark-blue: #15181b;
-$white:#fff;
+$white: #fff;
+$white-grey:#9fa9bc;
 //end:background-color
 
 $text-colors: (
     'primary':$primary,
     'dark':$dark,
     'dark-blue':$dark-blue,
-    'white':$white
+    'white':$white,
+    'white-grey':$white-grey
 );
 
 @each $key,
@@ -161,20 +222,105 @@ $value in $text-colors {
 
 //mixin for margin
 
-@mixin margin($top,$right,$bottom,$left){
+@mixin margin($top, $right, $bottom, $left) {
 
     //Short Hand
-    margin:$top $right $bottom $left;
+    margin: $top $right $bottom $left;
 }
 
 aside {
     width: 250px;
+    flex-shrink: 0;
 }
-.aside-wrapper{
-    @include margin(20px ,20px ,20px ,20px);
 
-    .aside-title{
-        @include margin(0px,0px,0px,20px);
-        font-size:20px;
+.aside-wrapper {
+    .aside-title {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .aside-header img {
+        margin-left: 20px;
+    }
+    .aside-ul {
+        list-style: none;
+        @include margin(30px, 30px, 0px, 30px);
+    }
+
+    .aside-ul li {
+        padding: 15px  35px 15px 15px;
+        background-color: $dark;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    & li:hover {
+        color: #05d7f7;
     }
 }
+
+.main-header{
+    border-bottom:1px solid hsla(0, 3%, 49%, 0.315);
+}
+.header-title{
+    padding: 15px;
+}
+
+.user-info-section img{
+    height:40px;
+    width:40px;
+    border-radius: 50px;
+}
+.user-details {
+    margin-left:10px;
+}
+.username{
+    font-size:12px;
+}
+.user-email{
+    margin-top:3px;
+    font-size:10px;
+    color:#9a9faa;
+}
+
+.card{
+    padding: 28px 15px;
+    border-radius:10px;
+    box-shadow:  0 4px 4px hsla(20%, 2%, 22%, 0.3);
+    width: 350px;;
+}
+.card-section{
+    gap:15px;
+}
+.user-img{
+    text-align: center;
+}
+.dev-name{
+    text-align: center;
+}
+.dev-tech{
+    text-align: center;
+    color:#b3c3cf;
+    font-size:12px;
+}
+.dev-email,.dev-contact,.dev-address{
+    margin-left: 6px;
+}
+
+.social-icons{
+    margin-left:18px;
+}
+
+.fa-youtube{
+    color:red;
+}
+
+.fa-instagram
+{
+    color:yellow
+}
+
+.icon-chrome{
+    color:violet
+}
+
+

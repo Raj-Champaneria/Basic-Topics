@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@200;300&family=Roboto:ital,wght@0,100;1,100&display=swap");
+.card {
+  width: 100%;
+  max-width: 492px;
+}
+
+.card {
+  --bs-card-border-radius:16px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #fff;
+}
+.card img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.card-title {
+  color: #6E7491;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+}
+.card span {
+  color: #7C8DB0;
+  font-size: 16px;
+}
+
+.view-section h5, .download-section h5 {
+  color: #6D8493;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.view-section p, .download-section p {
+  color: #151D20;
+  text-align: center;
+}
+
+.card-container {
+  margin-top: 43px;
+}
+
+button {
+  font-size: 23px;
+}
+
+.digital-marketing {
+  background-color: #EB5757;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.social-media {
+  width: 500px;
+  background-color: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.social-media p {
+  color: #90A4AE;
+}
+.social-media button {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.progress-bar {
+  background-color: #EB5757;
+}
+
+.progress-div p {
+  width: 200px;
+  font-size: 10px;
+  text-align: end;
+}
+
+.progress {
+  width: 200px;
+}
+
+.next-chapter-btn {
+  background-color: #EB5757;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .digital-card-warpper {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+  }
+  .digital-marketing, .social-media {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25px;
+  }
+  .social-media {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+  }
+  .progress {
+    width: 100px;
+  }
+}/*# sourceMappingURL=app.component.css.map */

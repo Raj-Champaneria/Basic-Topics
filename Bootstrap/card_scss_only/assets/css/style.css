@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@200;300&family=Roboto:ital,wght@0,100;1,100&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 html,
@@ -11,7 +13,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #0d6efd;
+  background-color: #04f1b6;
 }
 
 .bg-dark {
@@ -38,6 +40,10 @@ body {
   width: 25%;
 }
 
+.w-15 {
+  width: 15%;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -52,6 +58,46 @@ body {
 
 .h-25 {
   height: 25%;
+}
+
+.m-1 {
+  margin: 5px;
+}
+
+.m-2 {
+  margin: 10px;
+}
+
+.m-3 {
+  margin: 15px;
+}
+
+.m-4 {
+  margin: 20px;
+}
+
+.m-5 {
+  margin: 25px;
+}
+
+.mt-1 {
+  margin-top: 5px;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.mt-5 {
+  margin-top: 25px;
 }
 
 .d-flex {
@@ -90,8 +136,12 @@ body {
   align-items: center;
 }
 
+.align-items-start {
+  align-items: start;
+}
+
 .text-primary {
-  color: #0d6efd;
+  color: #05d7f7;
 }
 
 .text-dark {
@@ -106,14 +156,105 @@ body {
   color: #fff;
 }
 
-aside {
-  width: 250px;
+.text-white-grey {
+  color: #9fa9bc;
 }
 
-.aside-wrapper {
-  margin: 20px 20px 20px 20px;
+aside {
+  width: 250px;
+  flex-shrink: 0;
 }
+
 .aside-wrapper .aside-title {
-  margin: 0px 0px 0px 20px;
   font-size: 20px;
+  margin-left: 20px;
+}
+.aside-wrapper .aside-header img {
+  margin-left: 20px;
+}
+.aside-wrapper .aside-ul {
+  list-style: none;
+  margin: 30px 30px 0px 30px;
+}
+.aside-wrapper .aside-ul li {
+  padding: 15px 35px 15px 15px;
+  background-color: #111111;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.aside-wrapper li:hover {
+  color: #05d7f7;
+}
+
+.main-header {
+  border-bottom: 1px solid hsla(0, 3%, 49%, 0.315);
+}
+
+.header-title {
+  padding: 15px;
+}
+
+.user-info-section img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.user-details {
+  margin-left: 10px;
+}
+
+.username {
+  font-size: 12px;
+}
+
+.user-email {
+  margin-top: 3px;
+  font-size: 10px;
+  color: #9a9faa;
+}
+
+.card {
+  padding: 28px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px hsla(20, 2%, 22%, 0.3);
+  width: 350px;
+}
+
+.card-section {
+  gap: 15px;
+}
+
+.user-img {
+  text-align: center;
+}
+
+.dev-name {
+  text-align: center;
+}
+
+.dev-tech {
+  text-align: center;
+  color: #b3c3cf;
+  font-size: 12px;
+}
+
+.dev-email, .dev-contact, .dev-address {
+  margin-left: 6px;
+}
+
+.social-icons {
+  margin-left: 18px;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-instagram {
+  color: yellow;
+}
+
+.icon-chrome {
+  color: violet;
 }/*# sourceMappingURL=style.css.map */
