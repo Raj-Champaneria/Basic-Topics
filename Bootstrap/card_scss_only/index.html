@@ -14,8 +14,9 @@
 
 <body class="bg-dark">
     <!-- wrapper for wrapping whole application -->
-    <div class="wrapper h-100 d-flex">
+    <div class="wrapper w-100 h-100 d-flex">
         <!-- aside for sidebar -->
+        <input type="checkbox" name="" id="toggle">
         <aside class="bg-dark-blue h-100">
             <div class="aside-wrapper mt-4 ">
                 <div class="aside-header d-flex align-items-center ">
@@ -33,12 +34,15 @@
                 </div>
             </div>
         </aside>
-        <main class=" d-flex flex-column main-container">
+        <main class="d-flex flex-column main-container">
             <header class="main-header">
                 <div class="header-title bg-dark  d-flex justify-space-between align-items-center">
-                    <h2 class="text-white">Dashbaord</h2>
+                    <div class="dashboard-div d-flex align-items-center">
+                        <label for="toggle" class="fa-solid fa-bars text-white"></label>
+                        <h2 class="text-white">Dashbaord</h2>
+                    </div>
                     <div class="user-info-section d-flex">
-                        <img src="./assets/images/img_user.png" alt="" srcset="">
+                        <img src="./assets/images/Capture2.PNG" alt="" srcset="">
                         <div class="user-details d-flex flex-column justify-center text-white">
                             <p class="username">Raj Champaneria</p>
                             <p class="user-email ">rajchampaneria5@gmail.com</p>
@@ -46,7 +50,7 @@
                     </div>
                 </div>
             </header>
-            <div class="card-section m-3 p-5  d-flex">
+            <div class="card-section m-3 p-5    d-flex">
                 <div class="card bg-dark-blue">
                     <figure class="user-img">
                         <img src="./assets/images/Capture2.PNG">
@@ -54,21 +58,28 @@
                     <div class="dev-info">
                         <p class="text-primary dev-name">Kevang Patel</p>
                         <p class="dev-tech mt-1 ">Frontend Devloper</p>
-                        <i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
-                        <span class="dev-email text-white-grey">kevang.patel@gmail.com</span><br>
-                        <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
-                        <span class="text-white-grey mt-4 dev-contact">8796844478</span><br>
-                        <i class="fa-brands fa-chrome mt-4 text-white-grey"></i><br>
-                        <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
-                        <span class="dev-address text-white-grey">Valsad</span>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
+                                <span class="dev-email text-white-grey">kevang.patel@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
+                                <span class="text-white-grey mt-4 dev-contact">8796844478</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-earth-oceania mt-4 text-white-grey"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
+                                <span class="dev-address text-white-grey">Valsad</span>
+                            </li>
+                        </ul>
                         <div class="social-links mt-2">
-
+                            <i class="fa-solid fa-earth-oceania icon-chrome mt-4"></i>
+                            <i class="fa-brands fa-instagram social-icons"></i>
+                            <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
+                            <i class="fa-brands fa-youtube social-icons"></i>
                         </div>
-                        <i class="fa-brands fa-chrome mt-4 icon-chrome"></i>
-                        <i class="fa-brands fa-instagram social-icons"></i>
-                        <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
-                        <i class="fa-brands fa-youtube social-icons"></i>
-
                     </div>
                 </div>
                 <div class="card bg-dark-blue">
@@ -78,23 +89,31 @@
                     <div class="dev-info">
                         <p class="text-primary dev-name">Kevang Patel</p>
                         <p class="dev-tech mt-1 ">Frontend Devloper</p>
-                        <i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
-                        <span class="dev-email text-white-grey">kevang.patel@gmail.com</span><br>
-                        <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
-                        <span class="text-white-grey mt-4 dev-contact">8796844478</span><br>
-                        <i class="fa-brands fa-chrome mt-4 text-white-grey"></i><br>
-                        <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
-                        <span class="dev-address text-white-grey">Valsad</span>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
+                                <span class="dev-email text-white-grey">kevang.patel@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
+                                <span class="text-white-grey mt-4 dev-contact">8796844478</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-earth-oceania mt-4 text-white-grey"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
+                                <span class="dev-address text-white-grey">Valsad</span>
+                            </li>
+                        </ul>
                         <div class="social-links mt-2">
-
+                            <i class="fa-solid fa-earth-oceania icon-chrome mt-4"></i>
+                            <i class="fa-brands fa-instagram social-icons"></i>
+                            <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
+                            <i class="fa-brands fa-youtube social-icons"></i>
                         </div>
-                        <i class="fa-brands fa-chrome mt-4 icon-chrome"></i>
-                        <i class="fa-brands fa-instagram social-icons"></i>
-                        <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
-                        <i class="fa-brands fa-youtube social-icons"></i>
-
                     </div>
                 </div>
+              
                 <div class="card bg-dark-blue">
                     <figure class="user-img">
                         <img src="./assets/images/Capture2.PNG">
@@ -102,73 +121,97 @@
                     <div class="dev-info">
                         <p class="text-primary dev-name">Kevang Patel</p>
                         <p class="dev-tech mt-1 ">Frontend Devloper</p>
-                        <i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
-                        <span class="dev-email text-white-grey">kevang.patel@gmail.com</span><br>
-                        <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
-                        <span class="text-white-grey mt-4 dev-contact">8796844478</span><br>
-                        <i class="fa-brands fa-chrome mt-4 text-white-grey"></i><br>
-                        <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
-                        <span class="dev-address text-white-grey">Valsad</span>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
+                                <span class="dev-email text-white-grey">kevang.patel@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
+                                <span class="text-white-grey mt-4 dev-contact">8796844478</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-earth-oceania mt-4 text-white-grey"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
+                                <span class="dev-address text-white-grey">Valsad</span>
+                            </li>
+                        </ul>
                         <div class="social-links mt-2">
-
+                            <i class="fa-solid fa-earth-oceania icon-chrome mt-4"></i>
+                            <i class="fa-brands fa-instagram social-icons"></i>
+                            <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
+                            <i class="fa-brands fa-youtube social-icons"></i>
                         </div>
-                        <i class="fa-brands fa-chrome mt-4 icon-chrome"></i>
-                        <i class="fa-brands fa-instagram social-icons"></i>
-                        <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
-                        <i class="fa-brands fa-youtube social-icons"></i>
-
                     </div>
                 </div>
-                <div class="card bg-dark-blue">
-                    <figure class="user-img">
-                        <img src="./assets/images/Capture2.PNG">
-                    </figure>
-                    <div class="dev-info">
-                        <p class="text-primary dev-name">Kevang Patel</p>
-                        <p class="dev-tech mt-1 ">Frontend Devloper</p>
-                        <i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
-                        <span class="dev-email text-white-grey">kevang.patel@gmail.com</span><br>
-                        <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
-                        <span class="text-white-grey mt-4 dev-contact">8796844478</span><br>
-                        <i class="fa-brands fa-chrome mt-4 text-white-grey"></i><br>
-                        <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
-                        <span class="dev-address text-white-grey">Valsad</span>
-                        <div class="social-links mt-2">
-
+                    <div class="card bg-dark-blue">
+                        <figure class="user-img">
+                            <img src="./assets/images/Capture2.PNG">
+                        </figure>
+                        <div class="dev-info">
+                            <p class="text-primary dev-name">Kevang Patel</p>
+                            <p class="dev-tech mt-1 ">Frontend Devloper</p>
+                            <ul>
+                                <li><i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
+                                    <span class="dev-email text-white-grey">kevang.patel@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
+                                    <span class="text-white-grey mt-4 dev-contact">8796844478</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-earth-oceania mt-4 text-white-grey"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
+                                    <span class="dev-address text-white-grey">Valsad</span>
+                                </li>
+                            </ul>
+                            <div class="social-links mt-2">
+                                <i class="fa-solid fa-earth-oceania icon-chrome mt-4"></i>
+                                <i class="fa-brands fa-instagram social-icons"></i>
+                                <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
+                                <i class="fa-brands fa-youtube social-icons"></i>
+                            </div>
                         </div>
-                        <i class="fa-brands fa-chrome mt-4 icon-chrome"></i>
-                        <i class="fa-brands fa-instagram social-icons"></i>
-                        <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
-                        <i class="fa-brands fa-youtube social-icons"></i>
-
                     </div>
-                </div>
-                <div class="card bg-dark-blue">
-                    <figure class="user-img">
-                        <img src="./assets/images/Capture2.PNG">
-                    </figure>
-                    <div class="dev-info">
-                        <p class="text-primary dev-name">Kevang Patel</p>
-                        <p class="dev-tech mt-1 ">Frontend Devloper</p>
-                        <i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
-                        <span class="dev-email text-white-grey">kevang.patel@gmail.com</span><br>
-                        <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
-                        <span class="text-white-grey mt-4 dev-contact">8796844478</span><br>
-                        <i class="fa-brands fa-chrome mt-4 text-white-grey"></i><br>
-                        <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
-                        <span class="dev-address text-white-grey">Valsad</span>
-                        <div class="social-links mt-2">
-
+                    <div class="card bg-dark-blue">
+                        <figure class="user-img">
+                            <img src="./assets/images/Capture2.PNG">
+                        </figure>
+                        <div class="dev-info">
+                            <p class="text-primary dev-name">Kevang Patel</p>
+                            <p class="dev-tech mt-1 ">Frontend Devloper</p>
+                            <ul>
+                                <li><i class="fa-solid fa-envelope mt-3 email-icon text-white-grey"></i>
+                                    <span class="dev-email text-white-grey">kevang.patel@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone mt-4 text-white-grey"></i>
+                                    <span class="text-white-grey mt-4 dev-contact">8796844478</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-earth-oceania mt-4 text-white-grey"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot mt-4 text-white-grey"></i>
+                                    <span class="dev-address text-white-grey">Valsad</span>
+                                </li>
+                            </ul>
+                            <div class="social-links mt-2">
+                                <i class="fa-solid fa-earth-oceania icon-chrome mt-4"></i>
+                                <i class="fa-brands fa-instagram social-icons"></i>
+                                <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
+                                <i class="fa-brands fa-youtube social-icons"></i>
+                            </div>
                         </div>
-                        <i class="fa-brands fa-chrome mt-4 icon-chrome"></i>
-                        <i class="fa-brands fa-instagram social-icons"></i>
-                        <i class="fa-brands fa-facebook-f social-icons text-primary"></i>
-                        <i class="fa-brands fa-youtube social-icons"></i>
-
                     </div>
+    
                 </div>
-   
-            </div>
+
+           
+         
         </main>
     </div>
 </body>

@@ -14,7 +14,7 @@ body {
 }
 
 body{
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 //start:background-colors
@@ -227,10 +227,16 @@ $value in $text-colors {
     //Short Hand
     margin: $top $right $bottom $left;
 }
+.wrapper{
+    overflow: hidden;
+}
 
 aside {
     width: 250px;
     flex-shrink: 0;
+    transition: 0.4s ease-in-out;
+    flex: 0 0 250px;
+    overflow: hidden;
 }
 
 .aside-wrapper {
@@ -244,6 +250,7 @@ aside {
     .aside-ul {
         list-style: none;
         @include margin(30px, 30px, 0px, 30px);
+        white-space: nowrap;
     }
 
     .aside-ul li {
@@ -257,7 +264,10 @@ aside {
         color: #05d7f7;
     }
 }
-
+.main-container{
+    flex-grow: 1;
+    overflow: hidden;
+}
 .main-header{
     border-bottom:1px solid hsla(0, 3%, 49%, 0.315);
 }
@@ -286,10 +296,13 @@ aside {
     padding: 28px 15px;
     border-radius:10px;
     box-shadow:  0 4px 4px hsla(20%, 2%, 22%, 0.3);
-    width: 350px;;
+    width: 300px;
+    flex: 0.25;
 }
 .card-section{
     gap:15px;
+    flex-wrap: wrap;
+   overflow: auto;
 }
 .user-img{
     text-align: center;
@@ -323,4 +336,17 @@ aside {
     color:violet
 }
 
+li{
+    list-style: none;
+}
 
+#toggle{
+    display: none;
+}
+
+#toggle:checked+aside{
+    
+        transform: translateX(-250px);
+        width: 0;
+        flex: 0 0 0;
+}
