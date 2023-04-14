@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'scss_prac'`, () => {
+  it(`should have as title 'scss_FolderStrucure'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('scss_prac');
+    expect(app.title).toEqual('scss_FolderStrucure');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('scss_prac app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('scss_FolderStrucure app is running!');
   });
 });

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "scss_prac": {
+    "scss_FolderStrucure": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/scss_prac",
+            "outputPath": "dist/scss-folder-strucure",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -70,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "scss_prac:build:production"
+              "browserTarget": "scss_FolderStrucure:build:production"
             },
             "development": {
-              "browserTarget": "scss_prac:build:development"
+              "browserTarget": "scss_FolderStrucure:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "scss_prac:build"
+            "browserTarget": "scss_FolderStrucure:build"
           }
         },
         "test": {
@@ -106,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "28e39472-1a03-4e07-b437-d957800efab4"
+    "analytics": "cbc5ad9c-73bd-4ade-9ae9-48afc0bb4ede"
   }
 }
